@@ -1,0 +1,4595 @@
+header {
+  gtfs_realtime_version: "1.0"
+  incrementality: FULL_DATASET
+  timestamp: 1589976200
+}
+entity {
+  id: "V4599601005"
+  vehicle {
+    trip {
+      trip_id: "459960"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "200"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.983803
+      longitude: 138.59874
+      bearing: 198.06
+      speed: 10.6
+    }
+    timestamp: 1589976194
+    vehicle {
+      id: "1005"
+      label: "1005"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5120551006"
+  vehicle {
+    trip {
+      trip_id: "512055"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "171"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.973606
+      longitude: 138.62715
+      bearing: 176.52
+      speed: 7.6999998
+    }
+    timestamp: 1589976187
+    vehicle {
+      id: "1006"
+      label: "1006"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5114831015"
+  vehicle {
+    trip {
+      trip_id: "511483"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "141"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.927902
+      longitude: 138.62437
+      bearing: 265.51001
+      speed: 9.5
+    }
+    timestamp: 1589976185
+    vehicle {
+      id: "1015"
+      label: "1015"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V6015891023"
+  vehicle {
+    trip {
+      trip_id: "601589"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "G1"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.901157
+      longitude: 138.49059
+      bearing: 171.69
+      speed: 7.3000002
+    }
+    timestamp: 1589976186
+    vehicle {
+      id: "1023"
+      label: "1023"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4590351026"
+  vehicle {
+    trip {
+      trip_id: "459035"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "167"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.935051
+      longitude: 138.58838
+      bearing: 181.97
+      speed: 13.1
+    }
+    timestamp: 1589976185
+    vehicle {
+      id: "1026"
+      label: "1026"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V550108103"
+  vehicle {
+    trip {
+      trip_id: "550108"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "GLNELG"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.980431
+      longitude: 138.51201
+      bearing: 266.73001
+      speed: 0.0
+    }
+    timestamp: 1589976188
+    vehicle {
+      id: "103"
+      label: "103"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 0
+      }
+    }
+  }
+}
+entity {
+  id: "V5116601038"
+  vehicle {
+    trip {
+      trip_id: "511660"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "144"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.925724
+      longitude: 138.62
+      bearing: 311.57999
+      speed: 10.5
+    }
+    timestamp: 1589976196
+    vehicle {
+      id: "1038"
+      label: "1038"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5113931039"
+  vehicle {
+    trip {
+      trip_id: "511393"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "118"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.883846
+      longitude: 138.51315
+      bearing: 177.02
+      speed: 13.4
+    }
+    timestamp: 1589976194
+    vehicle {
+      id: "1039"
+      label: "1039"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V550106104"
+  vehicle {
+    trip {
+      trip_id: "550106"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "GLNELG"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.962944
+      longitude: 138.56349
+      bearing: 58.43
+      speed: 9.1000004
+    }
+    timestamp: 1589976192
+    vehicle {
+      id: "104"
+      label: "104"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 0
+      }
+    }
+  }
+}
+entity {
+  id: "V4617511040"
+  vehicle {
+    trip {
+      trip_id: "461751"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "287"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.911751
+      longitude: 138.54568
+      bearing: 86.550003
+      speed: 10.4
+    }
+    timestamp: 1589976193
+    vehicle {
+      id: "1040"
+      label: "1040"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5123891042"
+  vehicle {
+    trip {
+      trip_id: "512389"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "178"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.921299
+      longitude: 138.60355
+      bearing: 87.190002
+      speed: 5.1999998
+    }
+    timestamp: 1589976183
+    vehicle {
+      id: "1042"
+      label: "1042"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4641021045"
+  vehicle {
+    trip {
+      trip_id: "464102"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "G10"
+      direction_id: 1
+    }
+    position {
+      latitude: -35.02343
+      longitude: 138.57024
+      bearing: 217.39
+      speed: 1.7
+    }
+    timestamp: 1589976193
+    vehicle {
+      id: "1045"
+      label: "1045"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4600101055"
+  vehicle {
+    trip {
+      trip_id: "460010"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "200"
+      direction_id: 0
+    }
+    position {
+      latitude: -35.012371
+      longitude: 138.57477
+      bearing: 38.25
+      speed: 9.1000004
+    }
+    timestamp: 1589976186
+    vehicle {
+      id: "1055"
+      label: "1055"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V550104204"
+  vehicle {
+    trip {
+      trip_id: "550104"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "GLNELG"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.975986
+      longitude: 138.53769
+      bearing: 238.38
+      speed: 3.3
+    }
+    timestamp: 1589976183
+    vehicle {
+      id: "204"
+      label: "204"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 0
+      }
+    }
+  }
+}
+entity {
+  id: "V5126631103"
+  vehicle {
+    trip {
+      trip_id: "512663"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "541"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.92392
+      longitude: 138.6089
+      bearing: 85.239998
+      speed: 8.8999996
+    }
+    timestamp: 1589976190
+    vehicle {
+      id: "1103"
+      label: "1103"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V550325111"
+  vehicle {
+    trip {
+      trip_id: "550325"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "BTANIC"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.908443
+      longitude: 138.57678
+      bearing: 140.44
+      speed: 0.0
+    }
+    timestamp: 1589976190
+    vehicle {
+      id: "111"
+      label: "111"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 0
+      }
+    }
+  }
+}
+entity {
+  id: "V5130561115"
+  vehicle {
+    trip {
+      trip_id: "513056"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "J1"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.873123
+      longitude: 138.65678
+      bearing: 28.559999
+      speed: 23.9
+    }
+    timestamp: 1589976189
+    vehicle {
+      id: "1115"
+      label: "1115"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5130291122"
+  vehicle {
+    trip {
+      trip_id: "513029"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "J1"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.924
+      longitude: 138.60713
+      bearing: 272.45001
+      speed: 9.0
+    }
+    timestamp: 1589976189
+    vehicle {
+      id: "1122"
+      label: "1122"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4652591125"
+  vehicle {
+    trip {
+      trip_id: "465259"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "M44"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.925034
+      longitude: 138.58742
+      bearing: 357.23001
+      speed: 0.0
+    }
+    timestamp: 1589976187
+    vehicle {
+      id: "1125"
+      label: "1125"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V550322113"
+  vehicle {
+    trip {
+      trip_id: "550322"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "GLNELG"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.956379
+      longitude: 138.57645
+      bearing: 238.46001
+      speed: 6.1999998
+    }
+    timestamp: 1589976194
+    vehicle {
+      id: "113"
+      label: "113"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 0
+      }
+    }
+  }
+}
+entity {
+  id: "V550327114"
+  vehicle {
+    trip {
+      trip_id: "550327"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "BTANIC"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.907352
+      longitude: 138.57506
+      bearing: 308.85001
+      speed: 0.0
+    }
+    timestamp: 1589976184
+    vehicle {
+      id: "114"
+      label: "114"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 0
+      }
+    }
+  }
+}
+entity {
+  id: "V550105115"
+  vehicle {
+    trip {
+      trip_id: "550105"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "BTANIC"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.921051
+      longitude: 138.6093
+      bearing: 86.470001
+      speed: 0.0
+    }
+    timestamp: 1589976182
+    vehicle {
+      id: "115"
+      label: "115"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4652631156"
+  vehicle {
+    trip {
+      trip_id: "465263"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "M44"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.934818
+      longitude: 138.58836
+      bearing: 182.12
+      speed: 10.0
+    }
+    timestamp: 1589976191
+    vehicle {
+      id: "1156"
+      label: "1156"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4632831159"
+  vehicle {
+    trip {
+      trip_id: "463283"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "557"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.868816
+      longitude: 138.67609
+      bearing: 28.34
+      speed: 15.2
+    }
+    timestamp: 1589976196
+    vehicle {
+      id: "1159"
+      label: "1159"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4602371165"
+  vehicle {
+    trip {
+      trip_id: "460237"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "203B"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.882484
+      longitude: 138.61987
+      bearing: 357.22
+      speed: 0.0
+    }
+    timestamp: 1589976187
+    vehicle {
+      id: "1165"
+      label: "1165"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5496141178"
+  vehicle {
+    trip {
+      trip_id: "549614"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "H30"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.905933
+      longitude: 138.65648
+      bearing: 268.26001
+      speed: 10.2
+    }
+    timestamp: 1589976195
+    vehicle {
+      id: "1178"
+      label: "1178"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4591511180"
+  vehicle {
+    trip {
+      trip_id: "459151"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "168"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.979191
+      longitude: 138.51224
+      bearing: 239.56
+      speed: 0.0
+    }
+    timestamp: 1589976182
+    vehicle {
+      id: "1180"
+      label: "1180"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4643241183"
+  vehicle {
+    trip {
+      trip_id: "464324"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "G20"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.965687
+      longitude: 138.59074
+      bearing: 173.03999
+      speed: 10.5
+    }
+    timestamp: 1589976189
+    vehicle {
+      id: "1183"
+      label: "1183"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4641691202"
+  vehicle {
+    trip {
+      trip_id: "464169"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "G10"
+      direction_id: 0
+    }
+    position {
+      latitude: -35.017574
+      longitude: 138.54926
+      bearing: 92.389999
+      speed: 0.69999999
+    }
+    timestamp: 1589976192
+    vehicle {
+      id: "1202"
+      label: "1202"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4623841231"
+  vehicle {
+    trip {
+      trip_id: "462384"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "503"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.860561
+      longitude: 138.65988
+      bearing: 313.97
+      speed: 0.0
+    }
+    timestamp: 1589976195
+    vehicle {
+      id: "1231"
+      label: "1231"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5123351253"
+  vehicle {
+    trip {
+      trip_id: "512335"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "174"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.889881
+      longitude: 138.65527
+      bearing: 63.389999
+      speed: 9.6999998
+    }
+    timestamp: 1589976196
+    vehicle {
+      id: "1253"
+      label: "1253"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4610761255"
+  vehicle {
+    trip {
+      trip_id: "461076"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "253"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.872356
+      longitude: 138.5488
+      bearing: 87.07
+      speed: 9.6999998
+    }
+    timestamp: 1589976194
+    vehicle {
+      id: "1255"
+      label: "1255"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4617481256"
+  vehicle {
+    trip {
+      trip_id: "461748"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "287"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.91605
+      longitude: 138.56676
+      bearing: 155.28
+      speed: 12.7
+    }
+    timestamp: 1589976191
+    vehicle {
+      id: "1256"
+      label: "1256"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4603871258"
+  vehicle {
+    trip {
+      trip_id: "460387"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "208N"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.917568
+      longitude: 138.59901
+      bearing: 355.04001
+      speed: 10.7
+    }
+    timestamp: 1589976187
+    vehicle {
+      id: "1258"
+      label: "1258"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5119231261"
+  vehicle {
+    trip {
+      trip_id: "511923"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "157"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.904678
+      longitude: 138.57158
+      bearing: 127.38
+      speed: 12.6
+    }
+    timestamp: 1589976193
+    vehicle {
+      id: "1261"
+      label: "1261"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4610261263"
+  vehicle {
+    trip {
+      trip_id: "461026"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "251A"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.874458
+      longitude: 138.55116
+      bearing: 308.81
+      speed: 0.0
+    }
+    timestamp: 1589976190
+    vehicle {
+      id: "1263"
+      label: "1263"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4605261264"
+  vehicle {
+    trip {
+      trip_id: "460526"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "232"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.852257
+      longitude: 138.5157
+      bearing: 259.06
+      speed: 15.6
+    }
+    timestamp: 1589976192
+    vehicle {
+      id: "1264"
+      label: "1264"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4613301267"
+  vehicle {
+    trip {
+      trip_id: "461330"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "263"
+      direction_id: 0
+    }
+    position {
+      latitude: -35.009708
+      longitude: 138.52731
+      bearing: 267.09
+      speed: 8.1999998
+    }
+    timestamp: 1589976196
+    vehicle {
+      id: "1267"
+      label: "1267"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4624421271"
+  vehicle {
+    trip {
+      trip_id: "462442"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "506"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.821552
+      longitude: 138.66124
+      bearing: 355.67999
+      speed: 11.2
+    }
+    timestamp: 1589976188
+    vehicle {
+      id: "1271"
+      label: "1271"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4607881272"
+  vehicle {
+    trip {
+      trip_id: "460788"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "241A"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.919575
+      longitude: 138.59935
+      bearing: 176.64
+      speed: 10.6
+    }
+    timestamp: 1589976192
+    vehicle {
+      id: "1272"
+      label: "1272"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4630751278"
+  vehicle {
+    trip {
+      trip_id: "463075"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "545"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.811756
+      longitude: 138.67491
+      bearing: 341.60001
+      speed: 2.0999999
+    }
+    timestamp: 1589976183
+    vehicle {
+      id: "1278"
+      label: "1278"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4628791279"
+  vehicle {
+    trip {
+      trip_id: "462879"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "542"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.810555
+      longitude: 138.72438
+      bearing: 353.39001
+      speed: 0.0
+    }
+    timestamp: 1589976183
+    vehicle {
+      id: "1279"
+      label: "1279"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4643641351"
+  vehicle {
+    trip {
+      trip_id: "464364"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "G21"
+      direction_id: 1
+    }
+    position {
+      latitude: -35.061642
+      longitude: 138.60588
+      bearing: 158.33
+      speed: 3.0999999
+    }
+    timestamp: 1589976191
+    vehicle {
+      id: "1351"
+      label: "1351"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4619151358"
+  vehicle {
+    trip {
+      trip_id: "461915"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "300M"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.979511
+      longitude: 138.51236
+      bearing: 191.99001
+      speed: 0.0
+    }
+    timestamp: 1589976189
+    vehicle {
+      id: "1358"
+      label: "1358"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5132511359"
+  vehicle {
+    trip {
+      trip_id: "513251"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "W90"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.921814
+      longitude: 138.6055
+      bearing: 174.67
+      speed: 9.3000002
+    }
+    timestamp: 1589976186
+    vehicle {
+      id: "1359"
+      label: "1359"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5496491378"
+  vehicle {
+    trip {
+      trip_id: "549649"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "H30"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.924889
+      longitude: 138.59053
+      bearing: 242.06
+      speed: 0.0
+    }
+    timestamp: 1589976184
+    vehicle {
+      id: "1378"
+      label: "1378"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5496731422"
+  vehicle {
+    trip {
+      trip_id: "549673"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "H30"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.915329
+      longitude: 138.63019
+      bearing: 83.480003
+      speed: 11.6
+    }
+    timestamp: 1589976188
+    vehicle {
+      id: "1422"
+      label: "1422"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4582141449"
+  vehicle {
+    trip {
+      trip_id: "458214"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "110"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.921913
+      longitude: 138.58684
+      bearing: 111.94
+      speed: 0.0
+    }
+    timestamp: 1589976185
+    vehicle {
+      id: "1449"
+      label: "1449"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4629801465"
+  vehicle {
+    trip {
+      trip_id: "462980"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "543G"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.83189
+      longitude: 138.69455
+      bearing: 351.69
+      speed: 0.0
+    }
+    timestamp: 1589976194
+    vehicle {
+      id: "1465"
+      label: "1465"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5130841466"
+  vehicle {
+    trip {
+      trip_id: "513084"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "J1G"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.979366
+      longitude: 138.51236
+      bearing: 0.13
+      speed: 0.0
+    }
+    timestamp: 1589976185
+    vehicle {
+      id: "1466"
+      label: "1466"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5132011486"
+  vehicle {
+    trip {
+      trip_id: "513201"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "J2G"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.944687
+      longitude: 138.50885
+      bearing: 168.06
+      speed: 0.0
+    }
+    timestamp: 1589976183
+    vehicle {
+      id: "1486"
+      label: "1486"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5131981487"
+  vehicle {
+    trip {
+      trip_id: "513198"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "J2G"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.795513
+      longitude: 138.70174
+      bearing: 99.230003
+      speed: 15.4
+    }
+    timestamp: 1589976192
+    vehicle {
+      id: "1487"
+      label: "1487"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4604751511"
+  vehicle {
+    trip {
+      trip_id: "460475"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "230"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.913681
+      longitude: 138.59862
+      bearing: 357.51999
+      speed: 14.6
+    }
+    timestamp: 1589976198
+    vehicle {
+      id: "1511"
+      label: "1511"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5128831529"
+  vehicle {
+    trip {
+      trip_id: "512883"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "600B"
+      direction_id: 1
+    }
+    position {
+      latitude: -35.023556
+      longitude: 138.57014
+      bearing: 138.61
+      speed: 5.6999998
+    }
+    timestamp: 1589976192
+    vehicle {
+      id: "1529"
+      label: "1529"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4641661533"
+  vehicle {
+    trip {
+      trip_id: "464166"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "G10"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.960438
+      longitude: 138.59032
+      bearing: 354.29001
+      speed: 11.7
+    }
+    timestamp: 1589976194
+    vehicle {
+      id: "1533"
+      label: "1533"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4608561550"
+  vehicle {
+    trip {
+      trip_id: "460856"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "248"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.964436
+      longitude: 138.55473
+      bearing: 348.91
+      speed: 0.1
+    }
+    timestamp: 1589976192
+    vehicle {
+      id: "1550"
+      label: "1550"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5126531552"
+  vehicle {
+    trip {
+      trip_id: "512653"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "541"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.857914
+      longitude: 138.67358
+      bearing: 222.95
+      speed: 23.9
+    }
+    timestamp: 1589976187
+    vehicle {
+      id: "1552"
+      label: "1552"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4623051560"
+  vehicle {
+    trip {
+      trip_id: "462305"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "502"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.81908
+      longitude: 138.64052
+      bearing: 216.3
+      speed: 15.0
+    }
+    timestamp: 1589976193
+    vehicle {
+      id: "1560"
+      label: "1560"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4652671566"
+  vehicle {
+    trip {
+      trip_id: "465267"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "M44"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.833065
+      longitude: 138.69461
+      bearing: 85.57
+      speed: 4.8000002
+    }
+    timestamp: 1589976194
+    vehicle {
+      id: "1566"
+      label: "1566"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5117351573"
+  vehicle {
+    trip {
+      trip_id: "511735"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "147"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.939705
+      longitude: 138.65147
+      bearing: 177.94
+      speed: 8.3000002
+    }
+    timestamp: 1589976191
+    vehicle {
+      id: "1573"
+      label: "1573"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4642171575"
+  vehicle {
+    trip {
+      trip_id: "464217"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "G10"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.994354
+      longitude: 138.5394
+      bearing: 225.31
+      speed: 0.30000001
+    }
+    timestamp: 1589976187
+    vehicle {
+      id: "1575"
+      label: "1575"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5123861783"
+  vehicle {
+    trip {
+      trip_id: "512386"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "178"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.862503
+      longitude: 138.70969
+      bearing: 250.22
+      speed: 7.9000001
+    }
+    timestamp: 1589976191
+    vehicle {
+      id: "1783"
+      label: "1783"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4611371804"
+  vehicle {
+    trip {
+      trip_id: "461137"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "254"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.85936
+      longitude: 138.54723
+      bearing: 356.5
+      speed: 10.1
+    }
+    timestamp: 1589976189
+    vehicle {
+      id: "1804"
+      label: "1804"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4613331812"
+  vehicle {
+    trip {
+      trip_id: "461333"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "263"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.928398
+      longitude: 138.60072
+      bearing: 172.67
+      speed: 0.0
+    }
+    timestamp: 1589976186
+    vehicle {
+      id: "1812"
+      label: "1812"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5132821815"
+  vehicle {
+    trip {
+      trip_id: "513282"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "W90M"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.982738
+      longitude: 138.58296
+      bearing: 356.17999
+      speed: 10.7
+    }
+    timestamp: 1589976196
+    vehicle {
+      id: "1815"
+      label: "1815"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5496711821"
+  vehicle {
+    trip {
+      trip_id: "549671"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "H30"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.926548
+      longitude: 138.53351
+      bearing: 98.709999
+      speed: 10.5
+    }
+    timestamp: 1589976191
+    vehicle {
+      id: "1821"
+      label: "1821"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5494311823"
+  vehicle {
+    trip {
+      trip_id: "549431"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "H20"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.925098
+      longitude: 138.61343
+      bearing: 274.26999
+      speed: 15.0
+    }
+    timestamp: 1589976196
+    vehicle {
+      id: "1823"
+      label: "1823"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5127681825"
+  vehicle {
+    trip {
+      trip_id: "512768"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "548"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.768333
+      longitude: 138.71713
+      bearing: 106.21
+      speed: 13.0
+    }
+    timestamp: 1589976191
+    vehicle {
+      id: "1825"
+      label: "1825"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5159801827"
+  vehicle {
+    trip {
+      trip_id: "515980"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "208N"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.853867
+      longitude: 138.63583
+      bearing: 356.48001
+      speed: 14.1
+    }
+    timestamp: 1589976192
+    vehicle {
+      id: "1827"
+      label: "1827"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4651861828"
+  vehicle {
+    trip {
+      trip_id: "465186"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "M44"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.831322
+      longitude: 138.68782
+      bearing: 356.10999
+      speed: 11.0
+    }
+    timestamp: 1589976191
+    vehicle {
+      id: "1828"
+      label: "1828"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5126561831"
+  vehicle {
+    trip {
+      trip_id: "512656"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "541"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.796394
+      longitude: 138.71681
+      bearing: 356.64999
+      speed: 10.4
+    }
+    timestamp: 1589976197
+    vehicle {
+      id: "1831"
+      label: "1831"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4610801906"
+  vehicle {
+    trip {
+      trip_id: "461080"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "253"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.92889
+      longitude: 138.59369
+      bearing: 86.440002
+      speed: 0.0
+    }
+    timestamp: 1589976194
+    vehicle {
+      id: "1906"
+      label: "1906"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4582201908"
+  vehicle {
+    trip {
+      trip_id: "458220"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "110"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.878082
+      longitude: 138.49149
+      bearing: 1.0599999
+      speed: 0.2
+    }
+    timestamp: 1589976195
+    vehicle {
+      id: "1908"
+      label: "1908"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5494281914"
+  vehicle {
+    trip {
+      trip_id: "549428"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "H20"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.868683
+      longitude: 138.66125
+      bearing: 226.78
+      speed: 0.0
+    }
+    timestamp: 1589976192
+    vehicle {
+      id: "1914"
+      label: "1914"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4601201918"
+  vehicle {
+    trip {
+      trip_id: "460120"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "202"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.830357
+      longitude: 138.64606
+      bearing: 186.34
+      speed: 0.0
+    }
+    timestamp: 1589976189
+    vehicle {
+      id: "1918"
+      label: "1918"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4598471919"
+  vehicle {
+    trip {
+      trip_id: "459847"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "190B"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.973354
+      longitude: 138.60925
+      bearing: 0.0
+      speed: 0.0
+    }
+    timestamp: 1589976192
+    vehicle {
+      id: "1919"
+      label: "1919"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4605861921"
+  vehicle {
+    trip {
+      trip_id: "460586"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "235"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.914772
+      longitude: 138.60503
+      bearing: 169.86
+      speed: 0.0
+    }
+    timestamp: 1589976188
+    vehicle {
+      id: "1921"
+      label: "1921"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5122421922"
+  vehicle {
+    trip {
+      trip_id: "512242"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "174"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.879879
+      longitude: 138.66261
+      bearing: 207.17999
+      speed: 11.9
+    }
+    timestamp: 1589976198
+    vehicle {
+      id: "1922"
+      label: "1922"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4615951923"
+  vehicle {
+    trip {
+      trip_id: "461595"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "281"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.888962
+      longitude: 138.627
+      bearing: 48.619999
+      speed: 12.2
+    }
+    timestamp: 1589976183
+    vehicle {
+      id: "1923"
+      label: "1923"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4624911927"
+  vehicle {
+    trip {
+      trip_id: "462491"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "506"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.857727
+      longitude: 138.65633
+      bearing: 130.21001
+      speed: 0.0
+    }
+    timestamp: 1589976184
+    vehicle {
+      id: "1927"
+      label: "1927"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5122351932"
+  vehicle {
+    trip {
+      trip_id: "512235"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "174"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.935501
+      longitude: 138.61253
+      bearing: 353.81
+      speed: 0.0
+    }
+    timestamp: 1589976184
+    vehicle {
+      id: "1932"
+      label: "1932"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5186541938"
+  vehicle {
+    trip {
+      trip_id: "518654"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "178"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.921272
+      longitude: 138.6064
+      bearing: 262.97
+      speed: 9.5
+    }
+    timestamp: 1589976193
+    vehicle {
+      id: "1938"
+      label: "1938"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5118361941"
+  vehicle {
+    trip {
+      trip_id: "511836"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "150B"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.87479
+      longitude: 138.52577
+      bearing: 309.0
+      speed: 12.9
+    }
+    timestamp: 1589976196
+    vehicle {
+      id: "1941"
+      label: "1941"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4582241944"
+  vehicle {
+    trip {
+      trip_id: "458224"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "110"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.922474
+      longitude: 138.58691
+      bearing: 322.29001
+      speed: 0.0
+    }
+    timestamp: 1589976183
+    vehicle {
+      id: "1944"
+      label: "1944"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4605681945"
+  vehicle {
+    trip {
+      trip_id: "460568"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "232"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.852131
+      longitude: 138.50949
+      bearing: 173.92
+      speed: 0.0
+    }
+    timestamp: 1589976183
+    vehicle {
+      id: "1945"
+      label: "1945"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5124201946"
+  vehicle {
+    trip {
+      trip_id: "512420"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "178"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.870171
+      longitude: 138.68338
+      bearing: 4.5799999
+      speed: 9.6999998
+    }
+    timestamp: 1589976183
+    vehicle {
+      id: "1946"
+      label: "1946"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5494781952"
+  vehicle {
+    trip {
+      trip_id: "549478"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "H20"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.965294
+      longitude: 138.55267
+      bearing: 51.98
+      speed: 13.8
+    }
+    timestamp: 1589976193
+    vehicle {
+      id: "1952"
+      label: "1952"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5113211953"
+  vehicle {
+    trip {
+      trip_id: "511321"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "115"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.891819
+      longitude: 138.51416
+      bearing: 274.48001
+      speed: 7.5999999
+    }
+    timestamp: 1589976194
+    vehicle {
+      id: "1953"
+      label: "1953"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4615271955"
+  vehicle {
+    trip {
+      trip_id: "461527"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "273"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.919682
+      longitude: 138.6071
+      bearing: 340.03
+      speed: 12.7
+    }
+    timestamp: 1589976187
+    vehicle {
+      id: "1955"
+      label: "1955"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4622151959"
+  vehicle {
+    trip {
+      trip_id: "462215"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "502"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.774899
+      longitude: 138.66212
+      bearing: 308.29999
+      speed: 0.0
+    }
+    timestamp: 1589976189
+    vehicle {
+      id: "1959"
+      label: "1959"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4635601960"
+  vehicle {
+    trip {
+      trip_id: "463560"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "645"
+      direction_id: 1
+    }
+    position {
+      latitude: -35.017643
+      longitude: 138.54524
+      bearing: 269.85999
+      speed: 0.0
+    }
+    timestamp: 1589976189
+    vehicle {
+      id: "1960"
+      label: "1960"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5115911967"
+  vehicle {
+    trip {
+      trip_id: "511591"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "142"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.924725
+      longitude: 138.6188
+      bearing: 130.64999
+      speed: 9.3999996
+    }
+    timestamp: 1589976195
+    vehicle {
+      id: "1967"
+      label: "1967"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4590211973"
+  vehicle {
+    trip {
+      trip_id: "459021"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "167"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.960217
+      longitude: 138.54402
+      bearing: 86.860001
+      speed: 12.8
+    }
+    timestamp: 1589976187
+    vehicle {
+      id: "1973"
+      label: "1973"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4580851980"
+  vehicle {
+    trip {
+      trip_id: "458085"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "106"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.907364
+      longitude: 138.67564
+      bearing: 176.2
+      speed: 8.6999998
+    }
+    timestamp: 1589976191
+    vehicle {
+      id: "1980"
+      label: "1980"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4603691983"
+  vehicle {
+    trip {
+      trip_id: "460369"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "208"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.8885
+      longitude: 138.6145
+      bearing: 226.35001
+      speed: 0.0
+    }
+    timestamp: 1589976182
+    vehicle {
+      id: "1983"
+      label: "1983"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4580931985"
+  vehicle {
+    trip {
+      trip_id: "458093"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "106"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.920963
+      longitude: 138.60986
+      bearing: 87.139999
+      speed: 0.0
+    }
+    timestamp: 1589976192
+    vehicle {
+      id: "1985"
+      label: "1985"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5121351990"
+  vehicle {
+    trip {
+      trip_id: "512135"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "172"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.928074
+      longitude: 138.60973
+      bearing: 86.559998
+      speed: 9.8000002
+    }
+    timestamp: 1589976195
+    vehicle {
+      id: "1990"
+      label: "1990"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5495431992"
+  vehicle {
+    trip {
+      trip_id: "549543"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "H22"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.920456
+      longitude: 138.53539
+      bearing: 175.08
+      speed: 11.2
+    }
+    timestamp: 1589976186
+    vehicle {
+      id: "1992"
+      label: "1992"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4640741993"
+  vehicle {
+    trip {
+      trip_id: "464074"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "G10"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.855789
+      longitude: 138.59189
+      bearing: 356.79999
+      speed: 14.2
+    }
+    timestamp: 1589976182
+    vehicle {
+      id: "1993"
+      label: "1993"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5495731996"
+  vehicle {
+    trip {
+      trip_id: "549573"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "H22"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.921089
+      longitude: 138.63622
+      bearing: 88.129997
+      speed: 0.0
+    }
+    timestamp: 1589976188
+    vehicle {
+      id: "1996"
+      label: "1996"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V550324206"
+  vehicle {
+    trip {
+      trip_id: "550324"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "GLNELG"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.92178
+      longitude: 138.59471
+      bearing: 86.150002
+      speed: 8.0
+    }
+    timestamp: 1589976186
+    vehicle {
+      id: "206"
+      label: "206"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 0
+      }
+    }
+  }
+}
+entity {
+  id: "V550318208"
+  vehicle {
+    trip {
+      trip_id: "550318"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "GLNELG"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.977329
+      longitude: 138.53505
+      bearing: 58.049999
+      speed: 0.0
+    }
+    timestamp: 1589976189
+    vehicle {
+      id: "208"
+      label: "208"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 0
+      }
+    }
+  }
+}
+entity {
+  id: "V5078702210"
+  vehicle {
+    trip {
+      trip_id: "507870"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "721"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.92128
+      longitude: 138.5995
+      bearing: 177.11
+      speed: 6.6999998
+    }
+    timestamp: 1589976195
+    vehicle {
+      id: "2210"
+      label: "2210"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5096312229"
+  vehicle {
+    trip {
+      trip_id: "509631"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "400"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.75592
+      longitude: 138.65033
+      bearing: 36.439999
+      speed: 12.8
+    }
+    timestamp: 1589976185
+    vehicle {
+      id: "2229"
+      label: "2229"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5093692401"
+  vehicle {
+    trip {
+      trip_id: "509369"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "224M"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.74868
+      longitude: 138.66672
+      bearing: 161.47
+      speed: 5.5999999
+    }
+    timestamp: 1589976185
+    vehicle {
+      id: "2401"
+      label: "2401"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5099372402"
+  vehicle {
+    trip {
+      trip_id: "509937"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "411"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.762131
+      longitude: 138.6452
+      bearing: 337.29001
+      speed: 5.0
+    }
+    timestamp: 1589976192
+    vehicle {
+      id: "2402"
+      label: "2402"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5078862403"
+  vehicle {
+    trip {
+      trip_id: "507886"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "721"
+      direction_id: 0
+    }
+    position {
+      latitude: -35.140293
+      longitude: 138.49191
+      bearing: 17.450001
+      speed: 0.0
+    }
+    timestamp: 1589976195
+    vehicle {
+      id: "2403"
+      label: "2403"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5072872404"
+  vehicle {
+    trip {
+      trip_id: "507287"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "751R"
+      direction_id: 0
+    }
+    position {
+      latitude: -35.273369
+      longitude: 138.55438
+      bearing: 354.72
+      speed: 11.9
+    }
+    timestamp: 1589976185
+    vehicle {
+      id: "2404"
+      label: "2404"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5092992405"
+  vehicle {
+    trip {
+      trip_id: "509299"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "222"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.840748
+      longitude: 138.60541
+      bearing: 49.23
+      speed: 0.0
+    }
+    timestamp: 1589976182
+    vehicle {
+      id: "2405"
+      label: "2405"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5092512406"
+  vehicle {
+    trip {
+      trip_id: "509251"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "222"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.766411
+      longitude: 138.6378
+      bearing: 36.18
+      speed: 15.5
+    }
+    timestamp: 1589976189
+    vehicle {
+      id: "2406"
+      label: "2406"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5094382407"
+  vehicle {
+    trip {
+      trip_id: "509438"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "225M"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.802807
+      longitude: 138.6582
+      bearing: 200.48
+      speed: 10.4
+    }
+    timestamp: 1589976195
+    vehicle {
+      id: "2407"
+      label: "2407"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5094672408"
+  vehicle {
+    trip {
+      trip_id: "509467"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "228"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.8479
+      longitude: 138.60045
+      bearing: 211.41
+      speed: 0.0
+    }
+    timestamp: 1589976195
+    vehicle {
+      id: "2408"
+      label: "2408"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5093662409"
+  vehicle {
+    trip {
+      trip_id: "509366"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "224M"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.763603
+      longitude: 138.64281
+      bearing: 132.47
+      speed: 3.2
+    }
+    timestamp: 1589976184
+    vehicle {
+      id: "2409"
+      label: "2409"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5101512412"
+  vehicle {
+    trip {
+      trip_id: "510151"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "452"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.685856
+      longitude: 138.6899
+      bearing: 297.53
+      speed: 0.0
+    }
+    timestamp: 1589976192
+    vehicle {
+      id: "2412"
+      label: "2412"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5096772413"
+  vehicle {
+    trip {
+      trip_id: "509677"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "401"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.763317
+      longitude: 138.6407
+      bearing: 214.53
+      speed: 0.0
+    }
+    timestamp: 1589976191
+    vehicle {
+      id: "2413"
+      label: "2413"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5094072504"
+  vehicle {
+    trip {
+      trip_id: "509407"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "225"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.800888
+      longitude: 138.6387
+      bearing: 28.74
+      speed: 0.0
+    }
+    timestamp: 1589976181
+    vehicle {
+      id: "2504"
+      label: "2504"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5096422505"
+  vehicle {
+    trip {
+      trip_id: "509642"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "400"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.763412
+      longitude: 138.64064
+      bearing: 215.56
+      speed: 0.0
+    }
+    timestamp: 1589976187
+    vehicle {
+      id: "2505"
+      label: "2505"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5295022512"
+  vehicle {
+    trip {
+      trip_id: "529502"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "734"
+      direction_id: 0
+    }
+    position {
+      latitude: -35.076248
+      longitude: 138.53645
+      bearing: 318.28
+      speed: 2.7
+    }
+    timestamp: 1589976187
+    vehicle {
+      id: "2512"
+      label: "2512"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5074332517"
+  vehicle {
+    trip {
+      trip_id: "507433"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "751"
+      direction_id: 1
+    }
+    position {
+      latitude: -35.277397
+      longitude: 138.4581
+      bearing: 354.57001
+      speed: 0.0
+    }
+    timestamp: 1589976184
+    vehicle {
+      id: "2517"
+      label: "2517"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5084372518"
+  vehicle {
+    trip {
+      trip_id: "508437"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "747A"
+      direction_id: 0
+    }
+    position {
+      latitude: -35.172176
+      longitude: 138.46893
+      bearing: 355.79999
+      speed: 7.6999998
+    }
+    timestamp: 1589976188
+    vehicle {
+      id: "2518"
+      label: "2518"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5079502519"
+  vehicle {
+    trip {
+      trip_id: "507950"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "721F"
+      direction_id: 1
+    }
+    position {
+      latitude: -35.183651
+      longitude: 138.48906
+      bearing: 87.010002
+      speed: 0.0
+    }
+    timestamp: 1589976192
+    vehicle {
+      id: "2519"
+      label: "2519"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5100772525"
+  vehicle {
+    trip {
+      trip_id: "510077"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "451"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.68573
+      longitude: 138.68959
+      bearing: 304.92001
+      speed: 0.0
+    }
+    timestamp: 1589976186
+    vehicle {
+      id: "2525"
+      label: "2525"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V6003882532"
+  vehicle {
+    trip {
+      trip_id: "600388"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "GA1"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.875671
+      longitude: 138.58421
+      bearing: 180.33
+      speed: 12.0
+    }
+    timestamp: 1589976181
+    vehicle {
+      id: "2532"
+      label: "2532"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5098532534"
+  vehicle {
+    trip {
+      trip_id: "509853"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "411"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.756031
+      longitude: 138.59366
+      bearing: 12.68
+      speed: 10.0
+    }
+    timestamp: 1589976194
+    vehicle {
+      id: "2534"
+      label: "2534"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5094662538"
+  vehicle {
+    trip {
+      trip_id: "509466"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "228"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.877018
+      longitude: 138.60214
+      bearing: 356.76999
+      speed: 11.3
+    }
+    timestamp: 1589976192
+    vehicle {
+      id: "2538"
+      label: "2538"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5095492543"
+  vehicle {
+    trip {
+      trip_id: "509549"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "229"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.800488
+      longitude: 138.65623
+      bearing: 322.85999
+      speed: 0.0
+    }
+    timestamp: 1589976185
+    vehicle {
+      id: "2543"
+      label: "2543"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5101442549"
+  vehicle {
+    trip {
+      trip_id: "510144"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "452"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.718357
+      longitude: 138.66515
+      bearing: 20.42
+      speed: 1.1
+    }
+    timestamp: 1589976183
+    vehicle {
+      id: "2549"
+      label: "2549"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5095722554"
+  vehicle {
+    trip {
+      trip_id: "509572"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "229"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.836784
+      longitude: 138.60832
+      bearing: 27.719999
+      speed: 0.0
+    }
+    timestamp: 1589976188
+    vehicle {
+      id: "2554"
+      label: "2554"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5099972557"
+  vehicle {
+    trip {
+      trip_id: "509997"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "415H"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.76199
+      longitude: 138.64941
+      bearing: 72.599998
+      speed: 1.1
+    }
+    timestamp: 1589976183
+    vehicle {
+      id: "2557"
+      label: "2557"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5100802560"
+  vehicle {
+    trip {
+      trip_id: "510080"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "451"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.716667
+      longitude: 138.67131
+      bearing: 78.730003
+      speed: 8.8000002
+    }
+    timestamp: 1589976192
+    vehicle {
+      id: "2560"
+      label: "2560"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5078522570"
+  vehicle {
+    trip {
+      trip_id: "507852"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "720H"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.946152
+      longitude: 138.57132
+      bearing: 356.98999
+      speed: 14.0
+    }
+    timestamp: 1589976184
+    vehicle {
+      id: "2570"
+      label: "2570"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5079862573"
+  vehicle {
+    trip {
+      trip_id: "507986"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "722"
+      direction_id: 1
+    }
+    position {
+      latitude: -35.127308
+      longitude: 138.53647
+      bearing: 183.62
+      speed: 0.0
+    }
+    timestamp: 1589976190
+    vehicle {
+      id: "2573"
+      label: "2573"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5092522579"
+  vehicle {
+    trip {
+      trip_id: "509252"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "222"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.929504
+      longitude: 138.60085
+      bearing: 195.57001
+      speed: 0.0
+    }
+    timestamp: 1589976182
+    vehicle {
+      id: "2579"
+      label: "2579"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V6003892580"
+  vehicle {
+    trip {
+      trip_id: "600389"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "GA1"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.758854
+      longitude: 138.64433
+      bearing: 8.2399998
+      speed: 7.1999998
+    }
+    timestamp: 1589976196
+    vehicle {
+      id: "2580"
+      label: "2580"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V6003962584"
+  vehicle {
+    trip {
+      trip_id: "600396"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "GA1"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.801517
+      longitude: 138.60683
+      bearing: 296.81
+      speed: 0.0
+    }
+    timestamp: 1589976183
+    vehicle {
+      id: "2584"
+      label: "2584"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5081732590"
+  vehicle {
+    trip {
+      trip_id: "508173"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "733"
+      direction_id: 0
+    }
+    position {
+      latitude: -35.056473
+      longitude: 138.55968
+      bearing: 1.97
+      speed: 0.2
+    }
+    timestamp: 1589976184
+    vehicle {
+      id: "2590"
+      label: "2590"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5074322591"
+  vehicle {
+    trip {
+      trip_id: "507432"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "750"
+      direction_id: 1
+    }
+    position {
+      latitude: -35.284153
+      longitude: 138.44719
+      bearing: 166.49001
+      speed: 8.1999998
+    }
+    timestamp: 1589976195
+    vehicle {
+      id: "2591"
+      label: "2591"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5078682592"
+  vehicle {
+    trip {
+      trip_id: "507868"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "721"
+      direction_id: 1
+    }
+    position {
+      latitude: -35.13686
+      longitude: 138.52257
+      bearing: 269.45999
+      speed: 0.0
+    }
+    timestamp: 1589976185
+    vehicle {
+      id: "2592"
+      label: "2592"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5080972593"
+  vehicle {
+    trip {
+      trip_id: "508097"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "725"
+      direction_id: 1
+    }
+    position {
+      latitude: -35.116425
+      longitude: 138.51027
+      bearing: 254.50999
+      speed: 3.9000001
+    }
+    timestamp: 1589976183
+    vehicle {
+      id: "2593"
+      label: "2593"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5074202596"
+  vehicle {
+    trip {
+      trip_id: "507420"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "751"
+      direction_id: 1
+    }
+    position {
+      latitude: -35.17223
+      longitude: 138.50177
+      bearing: 348.84
+      speed: 10.0
+    }
+    timestamp: 1589976184
+    vehicle {
+      id: "2596"
+      label: "2596"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5078572598"
+  vehicle {
+    trip {
+      trip_id: "507857"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "720H"
+      direction_id: 1
+    }
+    position {
+      latitude: -35.016693
+      longitude: 138.57001
+      bearing: 230.08
+      speed: 8.1000004
+    }
+    timestamp: 1589976189
+    vehicle {
+      id: "2598"
+      label: "2598"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V2253652599"
+  vehicle {
+    trip {
+      trip_id: "225365"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "443"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.705673
+      longitude: 138.67397
+      bearing: 25.219999
+      speed: 7.0999999
+    }
+    timestamp: 1589976194
+    vehicle {
+      id: "2599"
+      label: "2599"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5072862703"
+  vehicle {
+    trip {
+      trip_id: "507286"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "750A"
+      direction_id: 0
+    }
+    position {
+      latitude: -35.187092
+      longitude: 138.47864
+      bearing: 266.32999
+      speed: 10.1
+    }
+    timestamp: 1589976188
+    vehicle {
+      id: "2703"
+      label: "2703"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5081702704"
+  vehicle {
+    trip {
+      trip_id: "508170"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "733"
+      direction_id: 1
+    }
+    position {
+      latitude: -35.114159
+      longitude: 138.54597
+      bearing: 90.059998
+      speed: 0.0
+    }
+    timestamp: 1589976185
+    vehicle {
+      id: "2704"
+      label: "2704"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5078722720"
+  vehicle {
+    trip {
+      trip_id: "507872"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "721"
+      direction_id: 1
+    }
+    position {
+      latitude: -35.021488
+      longitude: 138.56772
+      bearing: 148.0
+      speed: 0.0
+    }
+    timestamp: 1589976193
+    vehicle {
+      id: "2720"
+      label: "2720"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V459871273"
+  vehicle {
+    trip {
+      trip_id: "459871"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "190B"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.908718
+      longitude: 138.59631
+      bearing: 92.690002
+      speed: 4.8000002
+    }
+    timestamp: 1589976184
+    vehicle {
+      id: "273"
+      label: "273"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5078732739"
+  vehicle {
+    trip {
+      trip_id: "507873"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "721"
+      direction_id: 0
+    }
+    position {
+      latitude: -35.077625
+      longitude: 138.54866
+      bearing: 33.0
+      speed: 20.299999
+    }
+    timestamp: 1589976181
+    vehicle {
+      id: "2739"
+      label: "2739"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5078542741"
+  vehicle {
+    trip {
+      trip_id: "507854"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "720H"
+      direction_id: 0
+    }
+    position {
+      latitude: -35.095299
+      longitude: 138.53824
+      bearing: 48.450001
+      speed: 0.0
+    }
+    timestamp: 1589976184
+    vehicle {
+      id: "2741"
+      label: "2741"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5072882806"
+  vehicle {
+    trip {
+      trip_id: "507288"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "750R"
+      direction_id: 0
+    }
+    position {
+      latitude: -35.268562
+      longitude: 138.45894
+      bearing: 266.70999
+      speed: 12.4
+    }
+    timestamp: 1589976184
+    vehicle {
+      id: "2806"
+      label: "2806"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5294502807"
+  vehicle {
+    trip {
+      trip_id: "529450"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "734"
+      direction_id: 1
+    }
+    position {
+      latitude: -35.105457
+      longitude: 138.51962
+      bearing: 267.10001
+      speed: 11.3
+    }
+    timestamp: 1589976196
+    vehicle {
+      id: "2807"
+      label: "2807"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V5076102858"
+  vehicle {
+    trip {
+      trip_id: "507610"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "681"
+      direction_id: 1
+    }
+    position {
+      latitude: -35.080154
+      longitude: 138.50128
+      bearing: 148.64999
+      speed: 0.0
+    }
+    timestamp: 1589976165
+    vehicle {
+      id: "2858"
+      label: "2858"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V6015133017"
+  vehicle {
+    trip {
+      trip_id: "601513"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "OUTHA"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.904945
+      longitude: 138.57413
+      bearing: 131.75
+      speed: 14.0
+    }
+    timestamp: 1589976184
+    vehicle {
+      id: "3017"
+      label: "3017"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V6003753021"
+  vehicle {
+    trip {
+      trip_id: "600375"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "GAWC"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.621948
+      longitude: 138.73145
+      bearing: 217.06
+      speed: 14.3
+    }
+    timestamp: 1589976187
+    vehicle {
+      id: "3021"
+      label: "3021"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V6015523026"
+  vehicle {
+    trip {
+      trip_id: "601552"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "OUTHA"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.849079
+      longitude: 138.50838
+      bearing: 260.54001
+      speed: 8.8000002
+    }
+    timestamp: 1589976188
+    vehicle {
+      id: "3026"
+      label: "3026"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V6014783030"
+  vehicle {
+    trip {
+      trip_id: "601478"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "BEL"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.963421
+      longitude: 138.59482
+      bearing: 142.17
+      speed: 14.8
+    }
+    timestamp: 1589976190
+    vehicle {
+      id: "3030"
+      label: "3030"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V6003813112"
+  vehicle {
+    trip {
+      trip_id: "600381"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "GAWC"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.762901
+      longitude: 138.64235
+      bearing: 179.25999
+      speed: 0.0
+    }
+    timestamp: 1589976191
+    vehicle {
+      id: "3112"
+      label: "3112"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V6015143118"
+  vehicle {
+    trip {
+      trip_id: "601514"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "OUTHA"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.79863
+      longitude: 138.49915
+      bearing: 180.23
+      speed: 12.6
+    }
+    timestamp: 1589976197
+    vehicle {
+      id: "3118"
+      label: "3118"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V6014393130"
+  vehicle {
+    trip {
+      trip_id: "601439"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "BEL"
+      direction_id: 0
+    }
+    position {
+      latitude: -35.002159
+      longitude: 138.60072
+      bearing: 5.2399998
+      speed: 12.0
+    }
+    timestamp: 1589976186
+    vehicle {
+      id: "3130"
+      label: "3130"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V6003803136"
+  vehicle {
+    trip {
+      trip_id: "600380"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "GAWC"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.673687
+      longitude: 138.69341
+      bearing: 26.200001
+      speed: 21.4
+    }
+    timestamp: 1589976192
+    vehicle {
+      id: "3136"
+      label: "3136"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V6014403140"
+  vehicle {
+    trip {
+      trip_id: "601440"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "BEL"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.998039
+      longitude: 138.63211
+      bearing: 89.190002
+      speed: 0.0
+    }
+    timestamp: 1589976193
+    vehicle {
+      id: "3140"
+      label: "3140"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V3696543226"
+  vehicle {
+    trip {
+      trip_id: "369654"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "864"
+      direction_id: 0
+    }
+    position {
+      latitude: -35.019157
+      longitude: 138.78885
+      bearing: 292.67999
+      speed: 14.8
+    }
+    timestamp: 1589976185
+    vehicle {
+      id: "3226"
+      label: "3226"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V3696493228"
+  vehicle {
+    trip {
+      trip_id: "369649"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "864"
+      direction_id: 1
+    }
+    position {
+      latitude: -35.054176
+      longitude: 138.85176
+      bearing: 108.12
+      speed: 0.0
+    }
+    timestamp: 1589976191
+    vehicle {
+      id: "3228"
+      label: "3228"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V3696513232"
+  vehicle {
+    trip {
+      trip_id: "369651"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "864"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.922855
+      longitude: 138.58748
+      bearing: 174.88
+      speed: 0.0
+    }
+    timestamp: 1589976192
+    vehicle {
+      id: "3232"
+      label: "3232"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V3695703233"
+  vehicle {
+    trip {
+      trip_id: "369570"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "861"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.951069
+      longitude: 138.63322
+      bearing: 305.13
+      speed: 12.4
+    }
+    timestamp: 1589976193
+    vehicle {
+      id: "3233"
+      label: "3233"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4161344003"
+  vehicle {
+    trip {
+      trip_id: "416134"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "SEAFRD"
+      direction_id: 0
+    }
+    position {
+      latitude: -34.983196
+      longitude: 138.56702
+      bearing: 24.620001
+      speed: 0.0
+    }
+    timestamp: 1589976194
+    vehicle {
+      id: "4003"
+      label: "4003"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4161354014"
+  vehicle {
+    trip {
+      trip_id: "416135"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "SEAFRD"
+      direction_id: 0
+    }
+    position {
+      latitude: -35.17263
+      longitude: 138.48944
+      bearing: 357.95999
+      speed: 26.700001
+    }
+    timestamp: 1589976196
+    vehicle {
+      id: "4014"
+      label: "4014"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4162294015"
+  vehicle {
+    trip {
+      trip_id: "416229"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "SEAFRD"
+      direction_id: 1
+    }
+    position {
+      latitude: -35.055981
+      longitude: 138.50621
+      bearing: 168.75
+      speed: 26.6
+    }
+    timestamp: 1589976193
+    vehicle {
+      id: "4015"
+      label: "4015"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V4162304019"
+  vehicle {
+    trip {
+      trip_id: "416230"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "SEAFRD"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.92112
+      longitude: 138.58134
+      bearing: 221.53
+      speed: 14.0
+    }
+    timestamp: 1589976183
+    vehicle {
+      id: "4019"
+      label: "4019"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V460852781"
+  vehicle {
+    trip {
+      trip_id: "460852"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "248"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.995575
+      longitude: 138.5461
+      bearing: 266.04001
+      speed: 10.8
+    }
+    timestamp: 1589976192
+    vehicle {
+      id: "781"
+      label: "781"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
+entity {
+  id: "V464173963"
+  vehicle {
+    trip {
+      trip_id: "464173"
+      start_date: "20200520"
+      schedule_relationship: SCHEDULED
+      route_id: "G10"
+      direction_id: 1
+    }
+    position {
+      latitude: -34.924458
+      longitude: 138.59973
+      bearing: 170.03999
+      speed: 9.1999998
+    }
+    timestamp: 1589976186
+    vehicle {
+      id: "963"
+      label: "963"
+      [transit_realtime.tfnsw_vehicle_descriptor] {
+        air_conditioned: true
+        wheelchair_accessible: 1
+      }
+    }
+  }
+}
