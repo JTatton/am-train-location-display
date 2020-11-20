@@ -5,6 +5,7 @@ import urllib.request
 import math
 import leds
 import time
+import random
 
 from leds import clearAll
 
@@ -43,6 +44,7 @@ stations = loadStops()
 
 try:
     while(True):
+        trains = [[]]
         adelaideMetroFeed = downloadGTFSFeed()
         getTrainsWithPositions(adelaideMetroFeed)
 
@@ -60,7 +62,8 @@ try:
                         minDistance = dist
                 print(train[0] + " is at " + train[3])
                 leds.light(int(train[4])-1)
-
+        
+        print("")
         time.sleep(20)
         leds.clearAll()
 except KeyboardInterrupt:

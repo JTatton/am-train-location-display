@@ -2,12 +2,13 @@
 
 import time
 from rpi_ws281x import *
+import random
 
 LED_COUNT = 87
 LED_PIN = 18
 LED_FREQ_HZ = 800000
 LED_DMA = 10
-LED_BRIGHTNESS = 255
+LED_BRIGHTNESS = 63
 LED_INVERT = 0
 LED_CHANNEL = 0
 
@@ -18,7 +19,8 @@ def setupStrip():
     ledStrip.begin()
 
 def light(ledNum):
-    ledStrip.setPixelColor(ledNum, Color(255,0,0))
+#    ledStrip.setPixelColor(ledNum, Color(255,0,0))
+    ledStrip.setPixelColor(ledNum, Color(random.randrange(255),random.randrange(127),random.randrange(127)))
     ledStrip.show()
 
 
