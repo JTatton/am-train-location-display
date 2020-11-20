@@ -29,14 +29,13 @@ def getTrainsWithPositions(gtfsFeed):
                 train.append(entity.vehicle.vehicle.id)
                 train.append(entity.vehicle.position.latitude)
                 train.append(entity.vehicle.position.longitude)
-                train.append(entity.vehicle.trip.route_id)
 
                 trains.append(train)
 
 def distance(x1,y1,x2,y2):
     return math.sqrt( (x2-x1) ** 2 + (y2-y1) ** 2 )
 
-
+leds.setupStrip()
 stations = loadStops()
 adelaideMetroFeed = downloadGTFSFeed()
 getTrainsWithPositions(adelaideMetroFeed)
@@ -51,12 +50,8 @@ for train in trains:
             if dist < minDistance:
                 train[3] = station[0]
                 minDistance = dist
-        print(train[0] + " is at " + train[3] + " on the " + train[4])
+        print(train[0] + " is at " + train[3])
+        leds.light(train[3])
 
-leds.setupStrips()
-leds.light("OUTHA", 5)
-leds.light("OUTHA", 9)
-leds.light("OUTHA", 12)
-leds.light("OUTHA", 20)
-leds.light("OUTHA", 1)
+time.sleep(10)
 leds.clear()
