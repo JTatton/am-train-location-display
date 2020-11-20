@@ -3,6 +3,7 @@ from csv import reader
 from google.transit import gtfs_realtime_pb2
 import urllib.request
 import math
+import leds
 
 train = []
 trains = [[]]
@@ -28,6 +29,7 @@ def getTrainsWithPositions(gtfsFeed):
                 train.append(entity.vehicle.vehicle.id)
                 train.append(entity.vehicle.position.latitude)
                 train.append(entity.vehicle.position.longitude)
+                train.append(entity.vehicle.trip.route_id)
 
                 trains.append(train)
 
@@ -49,4 +51,12 @@ for train in trains:
             if dist < minDistance:
                 train[3] = station[0]
                 minDistance = dist
-        print(train[0] + " is at " + train[3])
+        print(train[0] + " is at " + train[3] + " on the " + train[4])
+
+leds.setupStrips()
+leds.light("OUTHA", 5)
+leds.light("OUTHA", 9)
+leds.light("OUTHA", 12)
+leds.light("OUTHA", 20)
+leds.light("OUTHA", 1)
+leds.clear()
