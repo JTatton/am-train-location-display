@@ -4,6 +4,7 @@ from google.transit import gtfs_realtime_pb2
 import urllib.request
 import math
 import leds
+import time
 
 train = []
 trains = [[]]
@@ -37,21 +38,25 @@ def distance(x1,y1,x2,y2):
 
 leds.setupStrip()
 stations = loadStops()
-adelaideMetroFeed = downloadGTFSFeed()
-getTrainsWithPositions(adelaideMetroFeed)
 
-for train in trains:
-    minDistance = 10.00
-    if train:
-        train.append("NULL")
-        for station in stations:
-            dist = distance(train[1],train[2], float(station[1]),float(station[2]))
-            strDistance = str( dist)
-            if dist < minDistance:
-                train[3] = station[0]
-                minDistance = dist
-        print(train[0] + " is at " + train[3])
-        leds.light(train[3])
+while(True):
+    adelaideMetroFeed = downloadGTFSFeed()
+    getTrainsWithPositions(adelaideMetroFeed)
 
-time.sleep(10)
-leds.clear()
+    for train in trains:
+        minDistance = 10.00
+        if train:
+            train.append("NULL")
+            train.append(0)
+            for station in stations:
+                dist = distance(train[1],train[2], float(station[1]),float(station[2]))
+                strDistance = str( dist)
+                if dist < minDistance:
+                    train[3] = station[0]
+                    train[4] = station[3]
+                    minDistance = dist
+            print(train[0] + " is at " + train[3])
+            leds.light(int(train[4])-1)
+
+    time.sleep(20)
+    leds.clearAll()
