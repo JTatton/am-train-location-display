@@ -34,13 +34,13 @@ def light(line, stop):
     if line == "OUTHA":
         outhaStrip.setPixelColor(stop, Color(255,0,0))
         outhaStrip.show()
-    elif line == "GAW":
+    #elif line == "GAW":
     #    gawStrip.setPixelColor(stop, Color(255,0,0))
      #   gawStrip.show()
-    elif line == "SEAF":
+    #elif line == "SEAF":
       #  seafStrip.setPixelColor(stop, Color(255,0,0))
        # seafStrip.show()
-    elif line == "BEL":
+   # elif line == "BEL":
         #belStrip.setPixelColor(stop, Color(255,0,0))
         #belStrip.show()
     else:
