@@ -29,6 +29,7 @@ def show():
 def clearAll():
     for i in range(LED_COUNT):
         ledStrip.setPixelColor(i, Color(0,0,0))
+        time.sleep(50/1000.0)
     ledStrip.show()
 
 def clear(ledNum):
