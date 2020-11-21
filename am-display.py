@@ -47,7 +47,7 @@ try:
         trains = [[]]
         adelaideMetroFeed = downloadGTFSFeed()
         getTrainsWithPositions(adelaideMetroFeed)
-
+        leds.clearAll()
         for train in trains:
             minDistance = 10.00
             if train:
@@ -62,9 +62,9 @@ try:
                         minDistance = dist
                 print(train[0] + " is at " + train[3])
                 leds.light(int(train[4])-1)
-        
+        leds.show()
         print("")
         time.sleep(20)
-        leds.clearAll()
+
 except KeyboardInterrupt:
     leds.clearAll()

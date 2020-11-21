@@ -21,13 +21,15 @@ def setupStrip():
 def light(ledNum):
 #    ledStrip.setPixelColor(ledNum, Color(255,0,0))
     ledStrip.setPixelColor(ledNum, Color(random.randrange(255),random.randrange(127),random.randrange(127)))
-    ledStrip.show()
+#    ledStrip.show()
 
+def show():
+    ledStrip.show()
 
 def clearAll():
     for i in range(LED_COUNT):
         ledStrip.setPixelColor(i, Color(0,0,0))
-        ledStrip.show()
+    ledStrip.show()
 
 def clear(ledNum):
     ledStrip.setPixelColor(ledNum, Color(0,0,0))
