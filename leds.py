@@ -19,8 +19,8 @@ def setupStrip():
     ledStrip.begin()
 
 def light(ledNum):
-#    ledStrip.setPixelColor(ledNum, Color(255,0,0))
-    ledStrip.setPixelColor(ledNum, Color(random.randrange(255),random.randrange(127),random.randrange(127)))
+    ledStrip.setPixelColor(ledNum, Color(255,0,0))
+#    ledStrip.setPixelColor(ledNum, Color(random.randrange(255),random.randrange(127),random.randrange(127)))
 #    ledStrip.show()
 
 def show():
