@@ -18,10 +18,8 @@ ledStrip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVER
 def setupStrip():
     ledStrip.begin()
 
-def light(ledNum):
-    ledStrip.setPixelColor(ledNum, Color(255,0,0))
-#    ledStrip.setPixelColor(ledNum, Color(random.randrange(255),random.randrange(127),random.randrange(127)))
-#    ledStrip.show()
+def light(ledNum, red=255, green=255, blue=255):
+    ledStrip.setPixelColor(ledNum, Color(red,green,blue))
 
 def show():
     ledStrip.show()
