@@ -44,17 +44,18 @@ def isReplacementBus(id):
         return False
 
 def getTrainsWithPositions(gtfsFeed):
+    global train
     for entity in gtfsFeed.entity:
         if entity.HasField('vehicle'):
             if isTrain(entity.vehicle.vehicle.id) \
-               or isReplacementBus(entity.vehicle.id):
+                or isReplacementBus(entity.vehicle.id):
 
-                train = []
+                train.clear()
                 train.append(entity.vehicle.vehicle.id)
                 train.append(entity.vehicle.position.latitude)
                 train.append(entity.vehicle.position.longitude)
 
-                trains.append(train)
+                trains.append(train.copy())
 
 def distance(x1,y1,x2,y2):
     return math.sqrt( (x2-x1) ** 2 + (y2-y1) ** 2 )
