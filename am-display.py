@@ -49,7 +49,7 @@ def getTrainsWithPositions(gtfsFeed):
     for entity in gtfsFeed.entity:
         if entity.HasField('vehicle'):
             if isTrain(entity.vehicle.vehicle.id) \
-                or isReplacementBus(entity.vehicle.id):
+                or isReplacementBus(entity.vehicle.vehicle.id):
 
                 train.clear()
                 train.append(entity.vehicle.vehicle.id)
