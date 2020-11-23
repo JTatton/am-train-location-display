@@ -79,7 +79,7 @@ def setLights():
                         train[4] = station[3]
                         minDistance = dist
                 print(train[0] + " is at " + train[3])
-                leds.light(int(train[4])-1)
+                leds.light(int(train[4])-1, 255, 0, 0)
 
 def clearPrevious():
     global prevTrains
