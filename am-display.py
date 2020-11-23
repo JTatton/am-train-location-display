@@ -54,8 +54,8 @@ def setLights():
     trains = [[]]
     adelaideMetroFeed = downloadGTFSFeed()
     getTrainsWithPositions(adelaideMetroFeed)
-    if prevTrains:
-        print(prevTrains)
+    if prevTrains[0]:
+        print(prevTrains[0])
         clearPrevious()
     for train in trains:
             minDistance = 10.00
