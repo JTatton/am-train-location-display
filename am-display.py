@@ -28,7 +28,14 @@ def downloadGTFSFeed():
 def getTrainsWithPositions(gtfsFeed):
     for entity in gtfsFeed.entity:
         if entity.HasField('vehicle'):
-            if len(entity.vehicle.vehicle.id) == 4 and (entity.vehicle.vehicle.id.startswith("40") or entity.vehicle.vehicle.id.startswith("30") or entity.vehicle.vehicle.id.startswith("31")):
+            if (len(entity.vehicle.vehicle.id) == 4 \
+                and ( entity.vehicle.vehicle.id.startswith("40") \
+                or entity.vehicle.vehicle.id.startswith("30") \
+                or entity.vehicle.vehicle.id.startswith("31") \
+                ))\
+                or (len(entity.vehicle.vehicle.id) == 4\
+                and ( entity.vehicle.vehicle.id.startswith("H1") \
+                or entity.vehicle.vehicle.id.startswith("G1"))):
                 train = []
                 train.append(entity.vehicle.vehicle.id)
                 train.append(entity.vehicle.position.latitude)
