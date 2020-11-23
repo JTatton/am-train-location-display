@@ -65,7 +65,7 @@ def setLights():
     global trains
     global prevTrains
     copyToPrev()
-    trains = [[]]
+    trains.clear()
     adelaideMetroFeed = downloadGTFSFeed()
     getTrainsWithPositions(adelaideMetroFeed)
     clearPrevious()
