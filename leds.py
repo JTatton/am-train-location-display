@@ -14,7 +14,6 @@ LED_CHANNEL = 0
 
 ledStrip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS, LED_CHANNEL)
 
-
 def setupStrip():
     ledStrip.begin()
 
@@ -32,4 +31,3 @@ def clearAll():
 
 def clear(ledNum):
     ledStrip.setPixelColor(ledNum, Color(0,0,0))
-    ledStrip.show()
