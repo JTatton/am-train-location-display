@@ -28,8 +28,8 @@ def downloadGTFSFeed():
 
 def isTrain(id):
     if len(id) == 4:
-        #if id.startswith("40") or id.startswith("30") or id.startswith("31"):
-        return True
+        if id.startswith("40") or id.startswith("30") or id.startswith("31"):
+            return True
     else:
         return False
 
