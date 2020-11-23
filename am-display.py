@@ -11,6 +11,7 @@ from leds import clearAll
 
 train = []
 trains = [[]]
+prevTrains = [[]]
 
 def loadStops():
     with open('station-info.csv', 'r') as readObj:
@@ -48,11 +49,12 @@ def distance(x1,y1,x2,y2):
 
 def setLights():
     global trains
+    global prevTrains
     prevTrains = trains
     trains = [[]]
     adelaideMetroFeed = downloadGTFSFeed()
     getTrainsWithPositions(adelaideMetroFeed)
-    clearPrevious(prevTrains)
+    clearPrevious()
     for train in trains:
             minDistance = 10.00
             if train:
@@ -68,7 +70,8 @@ def setLights():
                 print(train[0] + " is at " + train[3])
                 leds.light(int(train[4])-1)
 
-def clearPrevious(prevTrains):
+def clearPrevious():
+    global prevTrains
     for train in prevTrains:
         print(train)
         leds.clear(int(train[4])-1)
