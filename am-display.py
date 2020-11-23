@@ -35,7 +35,7 @@ def isTrain(id):
 
 def isReplacementBus(id):
     if id == "H1"\
-        or id = "G1"\
+        or id == "G1"\
         or id == "GA2"\
         or id == "GA3"\
         or id == "B1":
