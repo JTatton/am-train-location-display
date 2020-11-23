@@ -34,11 +34,11 @@ def isTrain(id):
         return False
 
 def isReplacementBus(id):
-    if id.startswith("H1")\
-        or id.startswith("G1")\
-        or id.startswith("GA2")\
-        or id.startswith("GA3")\
-        or id.startswith("B1"):
+    if id == "H1"\
+        or id = "G1"\
+        or id == "GA2"\
+        or id == "GA3"\
+        or id == "B1":
         return True
     else:
         return False
