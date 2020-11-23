@@ -73,8 +73,10 @@ def clearPrevious():
     global prevTrains
     for train in prevTrains:
         print(train)
-        if train[4]:
+        try:
             leds.clear(int(train[4])-1)
+        except:
+            print("Out of Range")
 
 def copyToPrev():
     global trains
