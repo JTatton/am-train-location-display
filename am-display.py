@@ -50,7 +50,7 @@ def distance(x1,y1,x2,y2):
 def setLights():
     global trains
     global prevTrains
-    prevTrains = trains.copy()
+    copyToPrev()
     trains = [[]]
     adelaideMetroFeed = downloadGTFSFeed()
     getTrainsWithPositions(adelaideMetroFeed)
@@ -63,7 +63,6 @@ def setLights():
                 train.append(0)
                 for station in stations:
                     dist = distance(train[1],train[2], float(station[1]),float(station[2]))
-                    strDistance = str( dist)
                     if dist < minDistance:
                         train[3] = station[0]
                         train[4] = station[3]
@@ -76,6 +75,13 @@ def clearPrevious():
     for train in prevTrains:
         print(train)
         leds.clear(int(train[4])-1)
+
+def copyToPrev():
+    global trains
+    global prevTrains
+    for train in trains:
+        prevTrain = train.copy()
+        prevTrains.append(prevTrain)
 
 leds.setupStrip()
 stations = loadStops()
