@@ -26,21 +26,29 @@ def downloadGTFSFeed():
     gtfsFeed.ParseFromString(serverResponse.read())
     return gtfsFeed
 
+def isTrain(id):
+    if len(id) == 4:
+        #if id.startswith("40") or id.startswith("30") or id.startswith("31"):
+        return True
+    else:
+        return False
+
+def isReplacementBus(id):
+    if id.startswith("H1")\
+        or id.startswith("G1")\
+        or id.startswith("GA2")\
+        or id.startswith("GA3")\
+        or id.startswith("B1"):
+        return True
+    else:
+        return False
+
 def getTrainsWithPositions(gtfsFeed):
     for entity in gtfsFeed.entity:
         if entity.HasField('vehicle'):
-            if (len(entity.vehicle.vehicle.id) == 4 \
-                and ( entity.vehicle.vehicle.id.startswith("40") \
-                or entity.vehicle.vehicle.id.startswith("30") \
-                or entity.vehicle.vehicle.id.startswith("31") \
-                ))\
-                or (len(entity.vehicle.vehicle.id) == 2\
-                and ( entity.vehicle.vehicle.id.startswith("H1") \
-                or entity.vehicle.vehicle.id.startswith("G1")))\
-                or (len(entity.vehicle.vehicle.id) == 3\
-                and ( entity.vehicle.vehicle.id.startswith("GA1") \
-                or entity.vehicle.vehicle.id.startswith("GA2")\
-                or entity.vehicle.vehicle.id.startswith("GA3"))):
+            if isTrain(entity.vehicle.vehicle.id) \
+               or isReplacementBus(entity.vehicle.id):
+
                 train = []
                 train.append(entity.vehicle.vehicle.id)
                 train.append(entity.vehicle.position.latitude)
