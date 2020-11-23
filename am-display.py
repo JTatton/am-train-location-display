@@ -70,6 +70,7 @@ def setLights():
 
 def clearPrevious(prevTrains):
     for train in prevTrains:
+        print(train)
         leds.clear(int(train[4])-1)
 
 leds.setupStrip()
