@@ -44,6 +44,7 @@ def isReplacementBus(id):
         return False
 
 def getTrainsWithPositions(gtfsFeed):
+    global trains
     global train
     for entity in gtfsFeed.entity:
         if entity.HasField('vehicle'):
