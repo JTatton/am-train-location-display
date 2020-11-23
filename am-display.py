@@ -50,7 +50,7 @@ def distance(x1,y1,x2,y2):
 def setLights():
     global trains
     global prevTrains
-    prevTrains = trains
+    prevTrains = trains.copy()
     trains = [[]]
     adelaideMetroFeed = downloadGTFSFeed()
     getTrainsWithPositions(adelaideMetroFeed)
