@@ -34,9 +34,13 @@ def getTrainsWithPositions(gtfsFeed):
                 or entity.vehicle.vehicle.id.startswith("30") \
                 or entity.vehicle.vehicle.id.startswith("31") \
                 ))\
-                or (len(entity.vehicle.vehicle.id) == 4\
+                or (len(entity.vehicle.vehicle.id) == 2\
                 and ( entity.vehicle.vehicle.id.startswith("H1") \
-                or entity.vehicle.vehicle.id.startswith("G1"))):
+                or entity.vehicle.vehicle.id.startswith("G1")))\
+                or (len(entity.vehicle.vehicle.id) == 3\
+                and ( entity.vehicle.vehicle.id.startswith("GA1") \
+                or entity.vehicle.vehicle.id.startswith("GA2")\
+                or entity.vehicle.vehicle.id.startswith("GA3"))):
                 train = []
                 train.append(entity.vehicle.vehicle.id)
                 train.append(entity.vehicle.position.latitude)
@@ -72,7 +76,6 @@ def setLights():
 def clearPrevious():
     global prevTrains
     for train in prevTrains:
-        print(train)
         try:
             leds.clear(int(train[4])-1)
         except:
