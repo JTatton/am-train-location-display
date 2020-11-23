@@ -46,16 +46,13 @@ def getTrainsWithPositions(gtfsFeed):
 def distance(x1,y1,x2,y2):
     return math.sqrt( (x2-x1) ** 2 + (y2-y1) ** 2 )
 
-leds.setupStrip()
-stations = loadStops()
-
-try:
-    while(True):
-        trains = [[]]
-        adelaideMetroFeed = downloadGTFSFeed()
-        getTrainsWithPositions(adelaideMetroFeed)
-        leds.clearAll()
-        for train in trains:
+def setLights():
+    prevTrains = trains
+    trains = [[]]
+    adelaideMetroFeed = downloadGTFSFeed()
+    getTrainsWithPositions(adelaideMetroFeed)
+    clearPrevious(prevTrains)
+    for train in trains:
             minDistance = 10.00
             if train:
                 train.append("NULL")
@@ -69,6 +66,35 @@ try:
                         minDistance = dist
                 print(train[0] + " is at " + train[3])
                 leds.light(int(train[4])-1)
+
+def clearPrevious(prevTrains):
+    for train in prevTrains:
+        leds.clear(int(train[4])-1)
+
+leds.setupStrip()
+stations = loadStops()
+
+try:
+    while(True):
+       # trains = [[]]
+       # adelaideMetroFeed = downloadGTFSFeed()
+       # getTrainsWithPositions(adelaideMetroFeed)
+       # leds.clearAll()
+       # for train in trains:
+       #     minDistance = 10.00
+       #     if train:
+       #         train.append("NULL")
+        #        train.append(0)
+        #        for station in stations:
+        #            dist = distance(train[1],train[2], float(station[1]),float(station[2]))
+        #            strDistance = str( dist)
+        #            if dist < minDistance:
+        #                train[3] = station[0]
+        #                train[4] = station[3]
+        #                minDistance = dist
+        #        print(train[0] + " is at " + train[3])
+        #        leds.light(int(train[4])-1)
+        setLights()
         leds.show()
         print("")
         time.sleep(20)
