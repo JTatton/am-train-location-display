@@ -49,12 +49,13 @@ def getTrainsWithPositions(gtfsFeed):
     for entity in gtfsFeed.entity:
         if entity.HasField('vehicle'):
             if isTrain(entity.vehicle.vehicle.id) \
-                or isReplacementBus(entity.vehicle.vehicle.id):
+                or isReplacementBus(entity.vehicle.trip.route_id):
 
                 train.clear()
                 train.append(entity.vehicle.vehicle.id)
                 train.append(entity.vehicle.position.latitude)
                 train.append(entity.vehicle.position.longitude)
+                #train.append(entity.vehicle.trip.direction_id)
 
                 trains.append(train.copy())
 
@@ -106,7 +107,7 @@ try:
         setLights()
         leds.show()
         print("")
-        time.sleep(20)
+        time.sleep(15)
 
 except KeyboardInterrupt:
     leds.clearAll()
