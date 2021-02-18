@@ -3,11 +3,9 @@ from csv import reader
 from google.transit import gtfs_realtime_pb2
 import urllib.request
 import math
-#import leds
+import leds
 import time
 import random
-
-#from leds import clearAll
 
 train = []
 trains = [[]]
@@ -80,14 +78,14 @@ def setLights():
                         train[4] = station[3]
                         minDistance = dist
                 print(train[0] + " is at " + train[3])
-#                leds.light(int(train[4])-1, 255, 0, 0)
+                leds.light(int(train[4])-1, 255, 0, 0)
 
 def clearPrevious():
     global prevTrains
     for train in prevTrains:
         try:
             print("nothing")
-#            leds.clear(int(train[4])-1)
+            leds.clear(int(train[4])-1)
         except:
             print("Out of Range")
 
@@ -98,7 +96,7 @@ def copyToPrev():
         prevTrain = train.copy()
         prevTrains.append(prevTrain)
 
-#leds.setupStrip()
+leds.setupStrip()
 stations = loadStops()
 
 try:
@@ -106,10 +104,10 @@ try:
         copyToPrev()
         clearPrevious()
         setLights()
- #       leds.show()
+        leds.show()
         print("")
         time.sleep(15)
 
 except KeyboardInterrupt:
-#    leds.clearAll()
+    leds.clearAll()
     print("Goodbye!")
