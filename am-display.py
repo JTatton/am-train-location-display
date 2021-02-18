@@ -14,7 +14,7 @@ trains = [[]]
 prevTrains = [[]]
 
 def loadStops():
-    with open('station-info.csv', 'r') as readObj:
+    with open('stops.csv', 'r') as readObj:
         csvReader = reader(readObj)
         listOfStations = list(csvReader)
     
