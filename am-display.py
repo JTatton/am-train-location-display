@@ -53,7 +53,8 @@ def getTrainsWithPositions(gtfsFeed):
                 train.append(entity.vehicle.vehicle.id)
                 train.append(entity.vehicle.position.latitude)
                 train.append(entity.vehicle.position.longitude)
-                #train.append(entity.vehicle.trip.direction_id)
+                train.append(entity.vehicle.trip.direction_id)
+                print(train[3])
 
                 trains.append(train.copy())
 
@@ -67,6 +68,7 @@ def setLights():
     adelaideMetroFeed = downloadGTFSFeed()
     getTrainsWithPositions(adelaideMetroFeed)
     for train in trains:
+            print(str(train[0]) + str(train[3]))
             minDistance = 10.00
             if train:
                 train.append("NULL")
@@ -77,7 +79,7 @@ def setLights():
                         train[3] = station[0]
                         train[4] = station[3]
                         minDistance = dist
-                print(train[0] + " is at " + train[3] + ": " + train[4])
+                print(train[0] + " " + train[3] + ": " + train[4] + ": " + train[5])
                 leds.light(int(train[4])-1, 255, 0, 0)
 
 def clearPrevious():
