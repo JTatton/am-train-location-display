@@ -53,7 +53,7 @@ def getTrainsWithPositions(gtfsFeed):
                 train.append(entity.vehicle.position.latitude)
                 train.append(entity.vehicle.position.longitude)
                 train.append(entity.vehicle.trip.direction_id)
-
+                print(train[0] + " " + str(train[1]) + " " + str(train[2]) + " " + str(train[3]) + ": " + str(train[4]) + " " + str(train[5]))
                 trains.append(train.copy())
 
 def distance(x1,y1,x2,y2):
@@ -78,16 +78,15 @@ def setLights():
                         print(train[3])
                         train[4] = station[3]
                         minDistance = dist
-                #print(train[0] + " is at " + str(train[3]) + ": " + str(train[4]))
-                print(train[0] + " " + str(train[1]) + str(train[2]) + " " + str(train[3]) + ": " + str(train[4]) + " " + str(train[5]))
+                print(train[0] + " " + str(train[1]) + " " + str(train[2]) + " " + str(train[3]) + ": " + str(train[4]) + " " + str(train[5]))
 
                 if isTrain(train[0]):
-                    if train[3] == 0:
+                    if train[5] == 0:
                         leds.light(int(train[4])-1, 255, 0, 0)
                     else:
                         leds.light(int(train[4])-1, 200, 0, 55)
                 else:
-                    if train[3] == 0:
+                    if train[5] == 0:
                         leds.light(int(train[4])-1, 0, 255, 0)
                     else:
                         leds.light(int(train[4])-1, 0, 200, 55)
