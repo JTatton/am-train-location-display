@@ -88,14 +88,14 @@ def setLights():
     for train in trains:
         if isTrain(train.id):
             if train.dir == 0:
-                leds.light(int(train.station.num-1), 255, 0, 0)
+                leds.light(int(train.station.num)-1, 255, 0, 0)
             else:
-                leds.light(int(train.station.num-1), 200, 0, 55)
+                leds.light(int(train.station.num)-1, 200, 0, 55)
         else:
             if train.dir == 0:
-                leds.light(int(train.station.num-1), 0, 255, 0)
+                leds.light(int(train.station.num)-1, 0, 255, 0)
             else:
-                leds.light(int(train.station.num-1), 0, 200, 55)
+                leds.light(int(train.station.num)-1, 0, 200, 55)
         
 
 readCSVofStations()
