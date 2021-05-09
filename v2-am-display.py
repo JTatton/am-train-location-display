@@ -5,8 +5,8 @@ from google.transit import gtfs_realtime_pb2
 import urllib.request
 import math
 import leds
-import time
-import random
+#import time
+#import random
 
 # Variable Setup
 trains = []
@@ -31,7 +31,6 @@ class Train:
 def readCSVofStations():
     with open("stops.csv", "r") as readObj:
         stationsRaw = list(reader(readObj))
-
         for station in stationsRaw:
             stations.append(Station(station[0], station[1], station[2], station[3]))
     
