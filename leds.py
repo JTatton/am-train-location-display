@@ -2,7 +2,6 @@
 
 import time
 from rpi_ws281x import *
-import random
 
 LED_COUNT = 87
 LED_PIN = 18

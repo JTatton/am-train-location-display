@@ -96,9 +96,13 @@ def setLights():
             else:
                 leds.light(int(train.station.num)-1, 0, 200, 55)
         
+def clearLights():
+    for train in trains:
+        leds.clear(int(train.station.num))
 
 readCSVofStations()
 getTrains()
 linkTrainsToStations()
 leds.setupStrip()
 setLights()
+clearLights()
