@@ -27,6 +27,7 @@ class Train:
         self.lat = lat
         self.long = long
         self.dir = dir
+    station = Station
 
 def readCSVofStations():
     with open("stops.csv", "r") as readObj:
