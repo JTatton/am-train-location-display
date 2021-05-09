@@ -32,7 +32,9 @@ def readCSVofStations():
         for station in stationsRaw:
             stations.append(Station(station[0], station[1], station[2], station[3]))
     
+def calcDistance(x1,y1,x2,y2):
+    return math.sqrt( (x2-x1) ** 2 + (y2-y1) ** 2 )
+
+
 
 readCSVofStations()
-for station in stations:
-    print(station.name + " " + station.lat + " " + station.long + " " + station.num)
