@@ -11,6 +11,13 @@ train = []
 trains = [[]]
 prevTrains = [[]]
 
+class Train:
+    def __init__(self, id, lat, long, dir)
+        self.id = id
+        self.lat = lat
+        self.long = long
+        self.dir = dir
+
 def loadStops():
     with open('stops.csv', 'r') as readObj:
         csvReader = reader(readObj)
