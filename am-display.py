@@ -15,7 +15,6 @@ def loadStops():
     with open('stops.csv', 'r') as readObj:
         csvReader = reader(readObj)
         listOfStations = list(csvReader)
-    
     return listOfStations
 
 def downloadGTFSFeed():
@@ -68,7 +67,6 @@ def setLights():
     adelaideMetroFeed = downloadGTFSFeed()
     getTrainsWithPositions(adelaideMetroFeed)
     for train in trains:
-            print(str(train[0]) + str(train[3]))
             minDistance = 10.00
             if train:
                 train.append("NULL")
@@ -80,7 +78,11 @@ def setLights():
                         train[4] = station[3]
                         minDistance = dist
                 print(train[0] + " is at " + str(train[3]) + ": " + str(train[4]))
-                leds.light(int(train[4])-1, 255, 0, 0)
+
+                if isTrain(train[0]):
+                    leds.light(int(train[4])-1, 255, 0, 0)
+                else:
+                    leds.light(int(train[4])-1, 0, 255, 0)
 
 def clearPrevious():
     global prevTrains
