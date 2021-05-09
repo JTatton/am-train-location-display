@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 from csv import reader
+from os import close
 from google.transit import gtfs_realtime_pb2
 import urllib.request
 import math
@@ -13,19 +14,19 @@ stations = []
 url = 'https://gtfs.adelaidemetro.com.au/v1/realtime/vehicle_positions' # URL of GTFS Feed
 
 # Class Setup
-class Train:
-    def __init__(self, id, lat, long, dir):
-        self.id = id
-        self.lat = lat
-        self.long = long
-        self.dir = dir
-
 class Station:
     def __init__(self, name, lat, long, num):
         self.name = name
         self.lat = lat
         self.long = long
         self.num = num
+
+class Train:
+    def __init__(self, id, lat, long, dir):
+        self.id = id
+        self.lat = lat
+        self.long = long
+        self.dir = dir
 
 def readCSVofStations():
     with open("stops.csv", "r") as readObj:
@@ -73,6 +74,32 @@ def getTrains():
             if isTrain(vehicleID) or isReplBus(routeID):
                 trains.append(Train(vehicleID, vehicleLat, vehicleLong, vehicleDir))
 
+def linkTrainsToStations():
+    for train in trains:
+        minDistance = 10.00
+        if train:
+            for station in stations:
+                dist = calcDistance(train.lat, train.long, float(station.lat), float(station.long))
+                if dist < minDistance:
+                    train.station = station
+                    minDistance = dist
+
+def setLights():
+    for train in trains:
+        if isTrain(train.id):
+            if train.dir == 0:
+                leds.light(train.station.num-1, 255, 0, 0)
+            else:
+                leds.light(train.station.num-1, 200, 0, 55)
+        else:
+            if train.dir == 0:
+                leds.light(train.station.num-1, 0, 255, 0)
+            else:
+                leds.light(train.station.num-1, 0, 200, 55)
+        
 
 readCSVofStations()
 getTrains()
+linkTrainsToStations()
+leds.setupStrip()
+setLights()
