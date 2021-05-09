@@ -11,12 +11,20 @@ train = []
 trains = [[]]
 prevTrains = [[]]
 
+listTrain = []
+
 class Train:
-    def __init__(self, id, lat, long, dir)
+    def __init__(self, id, lat, long, dir):
         self.id = id
         self.lat = lat
         self.long = long
         self.dir = dir
+
+class Station:
+    def __init__(self, name, lat, long):
+        self.name = name
+        self.lat = lat
+        self.long = long
 
 def loadStops():
     with open('stops.csv', 'r') as readObj:
@@ -55,13 +63,15 @@ def getTrainsWithPositions(gtfsFeed):
             if isTrain(entity.vehicle.vehicle.id) \
                 or isReplacementBus(entity.vehicle.trip.route_id):
 
-                train.clear()
-                train.append(entity.vehicle.vehicle.id)
-                train.append(entity.vehicle.position.latitude)
-                train.append(entity.vehicle.position.longitude)
-                train.append(entity.vehicle.trip.direction_id)
-                print(train[0] + " " + str(train[1]) + " " + str(train[2]) + " " + str(train[3]) + ": " + str(train[4]) + " " + str(train[5]))
-                trains.append(train.copy())
+                listTrain.append( Train(entity.vehicle.vehicle.id, entity.vehicle.position.latitude, entity.vehicle.position.longitude, entity.vehicle.trip.direction_id) )
+
+                #train.clear()
+                #train.append(entity.vehicle.vehicle.id)
+                #train.append(entity.vehicle.position.latitude)
+                #train.append(entity.vehicle.position.longitude)
+                #train.append(entity.vehicle.trip.direction_id)
+                #print(train[0] + " " + str(train[1]) + " " + str(train[2]) + " " + str(train[3]) + ": " + str(train[4]) + " " + str(train[5]))
+                #trains.append(train.copy())
 
 def distance(x1,y1,x2,y2):
     return math.sqrt( (x2-x1) ** 2 + (y2-y1) ** 2 )
