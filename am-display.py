@@ -73,7 +73,9 @@ def setLights():
                 for station in stations:
                     dist = distance(train[1],train[2], float(station[1]),float(station[2]))
                     if dist < minDistance:
+                        print(train[3])
                         train[3] = station[0]
+                        print(train[3])
                         train[4] = station[3]
                         minDistance = dist
                 print(train[0] + " is at " + str(train[3]) + ": " + str(train[4]))
