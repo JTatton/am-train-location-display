@@ -53,7 +53,6 @@ def getTrainsWithPositions(gtfsFeed):
                 train.append(entity.vehicle.position.latitude)
                 train.append(entity.vehicle.position.longitude)
                 train.append(entity.vehicle.trip.direction_id)
-                print(train[3])
 
                 trains.append(train.copy())
 
@@ -80,9 +79,15 @@ def setLights():
                 print(train[0] + " is at " + str(train[3]) + ": " + str(train[4]))
 
                 if isTrain(train[0]):
-                    leds.light(int(train[4])-1, 255, 0, 0)
+                    if train[3] == 0:
+                        leds.light(int(train[4])-1, 255, 0, 0)
+                    else:
+                        leds.light(int(train[4])-1, 200, 0, 55)
                 else:
-                    leds.light(int(train[4])-1, 0, 255, 0)
+                    if train[3] == 0:
+                        leds.light(int(train[4])-1, 0, 255, 0)
+                    else:
+                        leds.light(int(train[4])-1, 0, 200, 55)
 
 def clearPrevious():
     global prevTrains
