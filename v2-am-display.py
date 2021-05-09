@@ -27,7 +27,7 @@ class Train:
         self.lat = lat
         self.long = long
         self.dir = dir
-    station = Station
+    closeStation = Station
 
 def readCSVofStations():
     with open("stops.csv", "r") as readObj:
@@ -81,25 +81,25 @@ def linkTrainsToStations():
             for station in stations:
                 dist = calcDistance(train.lat, train.long, float(station.lat), float(station.long))
                 if dist < minDistance:
-                    train.station = station
+                    train.closeStation = station
                     minDistance = dist
 
 def setLights():
     for train in trains:
         if isTrain(train.id):
             if train.dir == 0:
-                leds.light(int(train.station.num)-1, 255, 0, 0)
+                leds.light(int(train.closeStation.num)-1, 255, 0, 0)
             else:
-                leds.light(int(train.station.num)-1, 200, 0, 55)
+                leds.light(int(train.closeStation.num)-1, 200, 0, 55)
         else:
             if train.dir == 0:
-                leds.light(int(train.station.num)-1, 0, 255, 0)
+                leds.light(int(train.closeStation.num)-1, 0, 255, 0)
             else:
-                leds.light(int(train.station.num)-1, 0, 200, 55)
+                leds.light(int(train.closeStation.num)-1, 0, 200, 55)
         
 def clearLights():
     for train in trains:
-        leds.clear(int(train.station.num))
+        leds.clear(int(train.closeStation.num))
 
 readCSVofStations()
 getTrains()
