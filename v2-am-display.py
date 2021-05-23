@@ -57,6 +57,7 @@ def getGTFSFeed():
     serverResponse = urllib.request.urlopen(url)
     gtfsFeed = gtfs_realtime_pb2.FeedMessage()
     gtfsFeed.ParseFromString(serverResponse.read())
+    print("return GTFSFeed")
     return gtfsFeed
 
 def isTrain(id):
