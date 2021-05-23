@@ -128,6 +128,7 @@ def clearLights():
             leds.clear(int(train.closeStation.num))
         except:
             print("Out of Range")
+    trains.clear()
 
 readCSVofStations()
 
