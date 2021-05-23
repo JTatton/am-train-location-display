@@ -5,7 +5,7 @@ from google.transit import gtfs_realtime_pb2
 import urllib.request
 import math
 import leds
-#import time
+import time
 #import random
 
 # Variable Setup
@@ -51,6 +51,7 @@ def isTrain(id):
         return False
 
 def isReplBus(id):
+    
     if id == "H1"\
         or id == "G1"\
         or id == "GA2"\
@@ -96,14 +97,25 @@ def setLights():
                 leds.light(int(train.closeStation.num)-1, 0, 255, 0)
             else:
                 leds.light(int(train.closeStation.num)-1, 0, 200, 55)
+    leds.show()
         
 def clearLights():
     for train in trains:
-        leds.clear(int(train.closeStation.num))
+        try:
+            leds.clear(int(train.closeStation.num))
+        except:
+            print("Out of Range")
 
 readCSVofStations()
-getTrains()
-linkTrainsToStations()
-leds.setupStrip()
-setLights()
-clearLights()
+
+try:
+    while(True):
+        getTrains()
+        linkTrainsToStations()
+        leds.setupStrip()
+        clearLights()
+        setLights()
+        time.sleep(15)
+except KeyboardInterrupt:
+    leds.clearAll()
+    print("Exiting")
