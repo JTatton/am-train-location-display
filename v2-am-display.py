@@ -37,7 +37,7 @@ class Colour:
         self.blue = blue
 
 belair = Colour(42,75,30)
-seaford = Colour(100,50,19)
+seaford = Colour(100,65,19)
 gawler = Colour(76,23,20)
 outerharbor = Colour(0,49,77)
 
