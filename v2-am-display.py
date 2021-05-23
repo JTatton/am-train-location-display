@@ -128,12 +128,18 @@ def clearLights():
             leds.clear(int(train.closeStation.num))
         except:
             print("Out of Range")
-    trains.clear()
+
+def clearTrains():
+    try:
+        trains.clear()
+    except :
+        print("Nothing to clear")
 
 readCSVofStations()
 
 try:
     while(True):
+        clearTrains()
         getTrains()
         linkTrainsToStations()
         leds.setupStrip()
