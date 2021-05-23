@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 from csv import reader
-from os import close
 from google.transit import gtfs_realtime_pb2
 import urllib.request
 import math
@@ -43,28 +42,32 @@ outerharbor = Colour(0,49,77)
 
 
 def readCSVofStations():
+    print("readCSV")
     with open("stops.csv", "r") as readObj:
         stationsRaw = list(reader(readObj))
         for station in stationsRaw:
             stations.append(Station(station[0], station[1], station[2], station[3]))
     
 def calcDistance(x1,y1,x2,y2):
+    print("calcDistance")
     return math.sqrt( (x2-x1) ** 2 + (y2-y1) ** 2 )
 
 def getGTFSFeed():
+    print("GTFSFeed")
     serverResponse = urllib.request.urlopen(url)
     gtfsFeed = gtfs_realtime_pb2.FeedMessage()
     gtfsFeed.ParseFromString(serverResponse.read())
     return gtfsFeed
 
 def isTrain(id):
+    print("isTrain")
     if len(id) == 4 and (id.startswith("40") or id.startswith("30") or id.startswith("31")):
         return True
     else:
         return False
 
 def isReplBus(id):
-    
+    print("isReplBus")
     if id == "H1"\
         or id == "G1"\
         or id == "GA1"\
@@ -77,6 +80,7 @@ def isReplBus(id):
 
 
 def getTrains():
+    print("getTrains")
     feed = getGTFSFeed()
     for entity in feed.entity:
         if entity.HasField('vehicle'):
@@ -90,6 +94,7 @@ def getTrains():
                 trains.append(Train(vehicleID, routeID, vehicleLat, vehicleLong, vehicleDir))
 
 def linkTrainsToStations():
+    print("linktrains")
     for train in trains:
         minDistance = 10.00
         if train:
@@ -100,6 +105,7 @@ def linkTrainsToStations():
                     minDistance = dist
 
 def setLights():
+    print("setLights")
     for train in trains:
         print(str(train.route) + " " + str(train.closeStation.name))
         if train.route == "BEL":
@@ -123,6 +129,7 @@ def setLights():
     leds.show()
         
 def clearLights():
+    print("clearLights")
     for train in trains:
         try:
             leds.clear(int(train.closeStation.num))
@@ -130,6 +137,7 @@ def clearLights():
             print("Out of Range")
 
 def clearTrains():
+    print("clearTrains")
     try:
         trains.clear()
     except :
