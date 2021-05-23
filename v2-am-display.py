@@ -101,6 +101,7 @@ def linkTrainsToStations():
 
 def setLights():
     for train in trains:
+        print(str(train.route) + " " + str(train.closeStation.name))
         if train.route == "BEL":
             leds.light(int(train.closeStation.num)-1,belair.red, belair.green, belair.blue)
         elif train.route == "OUTHA":
