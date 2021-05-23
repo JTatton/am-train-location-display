@@ -38,8 +38,8 @@ class Colour:
 
 belair = Colour(42,75,30)
 seaford = Colour(100,50,19)
-Gawler = Colour(76,23,20)
-OuterHarbour = Colour(0,49,77)
+gawler = Colour(76,23,20)
+outerharbor = Colour(0,49,77)
 
 
 def readCSVofStations():
@@ -67,6 +67,7 @@ def isReplBus(id):
     
     if id == "H1"\
         or id == "G1"\
+        or id == "GA1"\
         or id == "GA2"\
         or id == "GA3"\
         or id == "B1":
@@ -81,7 +82,6 @@ def getTrains():
         if entity.HasField('vehicle'):
             vehicleID = entity.vehicle.vehicle.id
             routeID = entity.vehicle.trip.route_id
-            print(routeID)
             vehicleLat = entity.vehicle.position.latitude
             vehicleLong = entity.vehicle.position.longitude
             vehicleDir = entity.vehicle.trip.direction_id
@@ -101,20 +101,18 @@ def linkTrainsToStations():
 
 def setLights():
     for train in trains:
-        if isTrain(train.id):
-            if train.dir == 0:
-
-
-
-
-                leds.light(int(train.closeStation.num)-1, 255, 0, 0)
-            else:
-                leds.light(int(train.closeStation.num)-1, 200, 0, 55)
+        if train.route == "BEL":
+            leds.light(int(train.closeStation.num)-1,belair.red, belair.green, belair.blue)
+        elif train.route == "OUTHA":
+            leds.light(int(train.closeStation.num)-1,outerharbor.red, outerharbor.green, outerharbor.blue)
+        elif train.route == "GRNG":
+            leds.light(int(train.closeStation.num)-1,outerharbor.red, outerharbor.green, outerharbor.blue)
+        elif train.route == "FLNDRS":
+            leds.light(int(train.closeStation.num)-1,seaford.red, seaford.green, seaford.blue)
+        elif train.route == "SEAFRD":
+            leds.light(int(train.closeStation.num)-1,seaford.red, seaford.green, seaford.blue)
         else:
-            if train.dir == 0:
-                leds.light(int(train.closeStation.num)-1, 0, 255, 0)
-            else:
-                leds.light(int(train.closeStation.num)-1, 0, 200, 55)
+            leds.light(int(train.closeStation.num)-1,gawler.red, gawler.green, gawler.blue)
     leds.show()
         
 def clearLights():
