@@ -22,12 +22,25 @@ class Station:
         self.num = num
 
 class Train:
-    def __init__(self, id, lat, long, dir):
+    def __init__(self, id, route, lat, long, dir):
         self.id = id
+        self.route = route
         self.lat = lat
         self.long = long
         self.dir = dir
     closeStation = Station
+
+class Colour:
+    def __init__(self, red, green, blue):
+        self.red = red
+        self.green = green
+        self.blue = blue
+
+belair = Colour(42,75,30)
+seaford = Colour(100,50,19)
+Gawler = Colour(76,23,20)
+OuterHarbour = Colour(0,49,77)
+
 
 def readCSVofStations():
     with open("stops.csv", "r") as readObj:
@@ -68,12 +81,13 @@ def getTrains():
         if entity.HasField('vehicle'):
             vehicleID = entity.vehicle.vehicle.id
             routeID = entity.vehicle.trip.route_id
+            print(routeID)
             vehicleLat = entity.vehicle.position.latitude
             vehicleLong = entity.vehicle.position.longitude
             vehicleDir = entity.vehicle.trip.direction_id
 
             if isTrain(vehicleID) or isReplBus(routeID):
-                trains.append(Train(vehicleID, vehicleLat, vehicleLong, vehicleDir))
+                trains.append(Train(vehicleID, routeID, vehicleLat, vehicleLong, vehicleDir))
 
 def linkTrainsToStations():
     for train in trains:
@@ -89,6 +103,10 @@ def setLights():
     for train in trains:
         if isTrain(train.id):
             if train.dir == 0:
+
+
+
+
                 leds.light(int(train.closeStation.num)-1, 255, 0, 0)
             else:
                 leds.light(int(train.closeStation.num)-1, 200, 0, 55)
