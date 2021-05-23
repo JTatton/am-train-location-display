@@ -54,8 +54,11 @@ def calcDistance(x1,y1,x2,y2):
 
 def getGTFSFeed():
     print("GTFSFeed")
+    print("ServerResponse")
     serverResponse = urllib.request.urlopen(url)
+    print("gtfsFeed")
     gtfsFeed = gtfs_realtime_pb2.FeedMessage()
+    print("parse")
     gtfsFeed.ParseFromString(serverResponse.read())
     print("return GTFSFeed")
     return gtfsFeed
