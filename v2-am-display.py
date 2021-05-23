@@ -112,8 +112,14 @@ def setLights():
             leds.light(int(train.closeStation.num)-1,seaford.red, seaford.green, seaford.blue)
         elif train.route == "SEAFRD":
             leds.light(int(train.closeStation.num)-1,seaford.red, seaford.green, seaford.blue)
-        else:
+        elif train.route == "GA1":
             leds.light(int(train.closeStation.num)-1,gawler.red, gawler.green, gawler.blue)
+        elif train.route == "GA2":
+            leds.light(int(train.closeStation.num)-1,gawler.red, gawler.green, gawler.blue)
+        elif train.route == "GA3":
+            leds.light(int(train.closeStation.num)-1,gawler.red, gawler.green, gawler.blue)
+        else:
+            leds.light(int(train.closeStation.num)-1,255,255,255)
     leds.show()
         
 def clearLights():
