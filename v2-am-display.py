@@ -38,7 +38,7 @@ class Colour:
 
 belair = Colour(42,75,30)
 seaford = Colour(100,50,19)
-gawler = Colour(76,23,20)
+gawler = Colour(126,23,20)
 outerharbor = Colour(0,49,77)
 
 
