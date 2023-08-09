@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 from csv import reader
 from google.transit import gtfs_realtime_pb2
 import urllib.request
