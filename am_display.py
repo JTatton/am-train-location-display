@@ -14,9 +14,6 @@ def get_valid_train_stops_by_route(trips, stop_times, stops):
     valid_stop = {}
 
     for route in TRAIN_ROUTES:
-        """valid_stop["route"] = route
-        valid_stop["stops"] = s.get_stops_on_route(route, trips, stop_times, stops)
-        valid_stops.append(valid_stop)"""
         valid_stops[route] = s.get_stops_on_route(route, trips, stop_times, stops)
 
     return valid_stops
@@ -72,6 +69,8 @@ def main():
     #extract_gt_zip(download_gt_zip(gtfs_zip_url))
 
     #feedinfo = s.read_feed_info_csv()
+    #routes = s.read_routes_csv()
+    #agency = s.read_agency_csv()
     print("Read Stop CSV")
     stops = s.read_stop_csv()
 
@@ -80,8 +79,7 @@ def main():
 
     print("Read Trips CSV")
     trips = s.read_trips_csv()
-    #routes = s.read_routes_csv()
-    #agency = s.read_agency_csv()
+
 
     feed_url = "https://gtfs.adelaidemetro.com.au/v1/realtime/vehicle_positions"
 
