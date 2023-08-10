@@ -1,10 +1,12 @@
 """
-Functions for handling fetching, parsing and dealing with the GTFS Feed
+Module for handling Realtime GTFS Feeds
+
+Joshua Tatton 2023
+
+Currently only working for Adelaide Metro Feed
 """
 from urllib.request import urlopen
 from google.transit import gtfs_realtime_pb2
-
-FEED_URL = "https://gtfs.adelaidemetro.com.au/v1/realtime/vehicle_positions"
 
 class EntityVehicle:
     """Vehicle in Entity"""
@@ -64,31 +66,26 @@ def main():
     """Main should only be called during testing"""
     print("Welcome to GTFSHandler.py")
 
+    feed_url = "https://gtfs.adelaidemetro.com.au/v1/realtime/vehicle_positions"
+
+    print(f"Feed URL: {feed_url}")
     print("Getting Feed")
-    gtfs_feed = get_feed()
+    gtfs_feed = get_feed(feed_url)
 
     entities = []
 
     for entity in gtfs_feed.entity:
-        new_entity = EntityVehicle(entity)
-        #new_entity.set_trip(entity)
-        entities.append(new_entity)
+        entities.append(EntityVehicle(entity))
 
     for i in entities:
-        print(f"Timestamp: {i.get_timestamp()}, \
-              Route ID: {i.get_routeid()}, \
-              Vehicle ID: {i.get_vehicleid()}, \
-              Lat: {i.get_position()[0]}, \
-              Long: {i.get_position()[1]}")
+        print(f"Route ID: {i.get_routeid()}, Vehicle ID: {i.get_vehicleid()}, Lat: {i.get_position()[0]}, Long: {i.get_position()[1]}")
 
-def get_feed():
+def get_feed(feed_url):
     """Function to get GTFS Feed and Parse to List"""
-    server_response = urlopen(FEED_URL)
+    server_response = urlopen(feed_url)
     gtfs_feed = gtfs_realtime_pb2.FeedMessage()
     gtfs_feed.ParseFromString(server_response.read())
     return gtfs_feed
 
-
 if __name__ == "__main__":
     main()
-    
