@@ -8,16 +8,6 @@ import leds
 TRAIN_ROUTES = ["BEL", "FLNDRS", "GAW", "GAWC", "GRNG", "NOAR", "OSBORN", "OUTHA", "SALIS", "SEAFRD"]
 FIRST_RUN = True
 
-def get_valid_train_stops_by_route(trips, stop_times, stops):
-
-    valid_stops = {}
-    valid_stop = {}
-
-    for route in TRAIN_ROUTES:
-        valid_stops[route] = s.get_stops_on_route(route, trips, stop_times, stops)
-
-    return valid_stops
-
 def get_distance(lat_1,long_1,lat_2,long_2):
     """Gets distance between point 1 and point 2"""
     lat_1 = float(lat_1)
@@ -89,7 +79,7 @@ def main():
     gtfs_entities = rt.get_entities(gtfs_feed)
 
     print("Get Train Routes")
-    train_routes = get_valid_train_stops_by_route(trips,stop_times,stops)
+    train_routes = s.get_stops_by_route(TRAIN_ROUTES, trips, stop_times, stops)
 
     print("Get List of Trains")
     trains = []

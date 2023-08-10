@@ -274,6 +274,16 @@ def get_stop_position_from_id(stop_id, stops):
     for stop in stops:
         if stop.get_stop_id() == stop_id:
             return stop.get_stop_position()
+        
+def get_stops_by_route(routes, trips, stop_times, stops):
+
+    valid_stops = {}
+    valid_stop = {}
+
+    for route in routes:
+        valid_stops[route] = get_stops_on_route(route, trips, stop_times, stops)
+
+    return valid_stops
 
 def main():
     """Main should only call when testing"""
