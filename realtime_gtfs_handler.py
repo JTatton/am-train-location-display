@@ -5,7 +5,7 @@ Joshua Tatton 2023
 
 Currently only working for Adelaide Metro Feed
 """
-from urllib.request import urlopen
+import requests
 from google.transit import gtfs_realtime_pb2
 
 class EntityVehicle:
@@ -82,9 +82,9 @@ def main():
 
 def get_feed(feed_url):
     """Function to get GTFS Feed and Parse to List"""
-    server_response = urlopen(feed_url)
+    request_response = requests.get(feed_url)
     gtfs_feed = gtfs_realtime_pb2.FeedMessage()
-    gtfs_feed.ParseFromString(server_response.read())
+    gtfs_feed.ParseFromString(request_response.content)
     return gtfs_feed
 
 if __name__ == "__main__":
