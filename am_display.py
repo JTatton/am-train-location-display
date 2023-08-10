@@ -17,24 +17,6 @@ def get_distance(lat_1,long_1,lat_2,long_2):
 
     return math.dist([lat_1,long_1], [lat_2,long_2])
 
-
-def old_get_closest_stop(lat, long, route_id, trips, stop_times, stops):
-
-    closest_stop = s.Stop
-    closest_dist = 9999
-    possible_stops = s.get_stops_on_route(route_id,trips,stop_times,stops)
-
-    for possible_stop in possible_stops:
-        stop_lat, stop_long = possible_stop.get_stop_position()
-
-        dist_to_train = get_distance(lat,long,stop_lat,stop_long)
-
-        if dist_to_train < closest_dist:
-            closest_stop = possible_stop
-            closest_dist = dist_to_train
-
-    return closest_stop
-
 def get_closest_train_stop(train, train_routes):
     closest_distance = 9999
 
@@ -52,6 +34,12 @@ def get_closest_train_stop(train, train_routes):
             closest_distance = dist
 
     return closest_stop
+
+def setup_gtfs():
+    pass
+
+def setup_led_strip():
+    leds.setup_strip()
 
 def main():
     gtfs_zip_url = "https://gtfs.adelaidemetro.com.au/v1/static/latest/google_transit.zip"
