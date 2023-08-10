@@ -81,6 +81,9 @@ class StopTime():
 
     def get_stop_id(self):
         return self.stop_id
+    
+    def get_trip_id(self):
+        return self.trip_id
 
 class Trip():
     def __init__(self, trip):
@@ -223,6 +226,28 @@ def check_gt_url(url):
     """Primitively checks that the url is a google_transit zip"""
     return url.split("/")[-1] == "google_transit.zip"
 
+def get_stop_id_on_route(route_id, trips, stop_times):
+    """Returns List of Stop IDs on Route"""
+    valid_trip_ids = []
+    valid_stop_ids = []
+
+    for trip in trips:
+        if trip.get_route_id() == route_id:
+            if trip.get_trip_id() not in valid_trip_ids:
+                valid_trip_ids.append(trip.get_trip_id())
+
+    for stop_time in stop_times:
+        if stop_time.get_trip_id() in valid_trip_ids:
+            if stop_time.get_stop_id() not in valid_stop_ids:
+                valid_stop_ids.append(stop_time.get_stop_id())
+    
+    return valid_stop_ids
+
+def get_stop_position_from_id(stop_id, stops):
+
+    for stop in stops:
+        if stop.get_stop_id() == stop_id:
+            return stop.get_stop_position()
 
 def main():
     """Main should only call when testing"""
@@ -239,8 +264,7 @@ def main():
     routes = read_routes_csv()
     agency = read_agency_csv()
 
-    for route in routes:
-        print(route.get_route_id(), route.get_route_color() ,route.get_route_colours_int())
+    get_stop_id_on_route("SEAFRD",trips,stop_times)
 
 if __name__ == "__main__":
     main()

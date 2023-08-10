@@ -30,18 +30,6 @@ class EntityVehicle:
         self.vehicle_position["bearing"] = entity.vehicle.position.bearing
         self.vehicle_position["speed"] = entity.vehicle.position.speed
 
-    def set_timestamp(self, timestamp):
-        """Setter Function for Timestamp"""
-        self.vehicle_timestamp = timestamp
-
-    def set_trip(self, trip_id, route_id, direction_id, start_date, schedule_relationship):
-        """Setter Function for Trip"""
-        self.vehicle_trip["trip_id"] = trip_id
-        self.vehicle_trip["route_id"] = route_id
-        self.vehicle_trip["direction_id"] = direction_id
-        self.vehicle_trip["start_date"] = start_date
-        self.vehicle_trip["schedule_relationship"] = schedule_relationship
-
     def get_timestamp(self):
         """Getter Function returns Timestamp"""
         return self.vehicle_timestamp
