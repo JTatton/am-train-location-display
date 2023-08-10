@@ -1,11 +1,8 @@
 """
 Functions for handling fetching, parsing and dealing with the GTFS Feed
 """
-import math
-from csv import reader
 from urllib.request import urlopen
 from google.transit import gtfs_realtime_pb2
-import leds
 
 FEED_URL = "https://gtfs.adelaidemetro.com.au/v1/realtime/vehicle_positions"
 
@@ -94,3 +91,4 @@ def get_feed():
 
 if __name__ == "__main__":
     main()
+    
