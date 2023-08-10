@@ -243,6 +243,32 @@ def get_stop_id_on_route(route_id, trips, stop_times):
     
     return valid_stop_ids
 
+def get_stops_on_route(route_id, trips, stop_times, stops):
+    """Returns List of Stops on Route"""
+    valid_trip_ids = []
+    valid_stop_ids = []
+    valid_stops = []
+
+    for trip in trips:
+        if trip.get_route_id() == route_id:
+            trip_id = trip.get_trip_id()
+            if trip_id not in valid_trip_ids:
+                valid_trip_ids.append(trip_id)
+
+    for stop_time in stop_times:
+        if stop_time.get_trip_id() in valid_trip_ids:
+            stop_id = stop_time.get_stop_id()
+            if stop_id not in valid_stop_ids:
+                valid_stop_ids.append(stop_id)
+
+    for stop in stops:
+        stops_stop_id = stop.get_stop_id()
+        if stops_stop_id in valid_stop_ids:
+            if stops_stop_id not in valid_stops:
+                valid_stops.append(stop)
+
+    return valid_stops
+
 def get_stop_position_from_id(stop_id, stops):
 
     for stop in stops:

@@ -46,7 +46,7 @@ class EntityVehicle:
         """Getter Function returns Vehicle ID"""
         return self.vehicle_vehicle["id"]
 
-    def get_position(self):
+    def get_vehicle_position(self):
         """Getter Function returns Tuple (latitude, longitude)"""
         return (self.vehicle_position["latitude"], self.vehicle_position["longitude"])
 
