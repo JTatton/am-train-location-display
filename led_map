@@ -1,0 +1,317 @@
+stop_id,stop_name,led_num
+6669,Belair Railway Station,61
+6732,Pinera Railway Station,60
+6696,Glenalta Railway Station,59
+6670,Blackwood Railway Station,58
+6679,Coromandel Railway Station,57
+6685,Eden Hills Railway Station,56
+6711,Lynton Railway Station,55
+6740,Torrens Park Railway Station,54
+6718,Mitcham Railway Station,53
+6741,Unley Park Railway Station,52
+101629,Millswood Railway Station,51
+6697,Goodwood Railway Station,67
+101012,Adelaide Showground Railway Station,66
+6717,Mile End Railway Station,65
+6665,Adelaide Railway Station,99
+101493,Mile End Railway Station,65
+101494,Adelaide Showground Railway Station,66
+101491,Goodwood Railway Station,67
+101630,Millswood Railway Station,51
+101490,Unley Park Railway Station,52
+101489,Mitcham Railway Station,53
+101488,Torrens Park Railway Station,54
+101487,Lynton Railway Station,55
+101486,Eden Hills Railway Station,56
+101485,Coromandel Railway Station,57
+101484,Blackwood Railway Station,58
+101483,Glenalta Railway Station,59
+101482,Pinera Railway Station,60
+101481,Belair Railway Station,61
+6697,Goodwood Railway Station,67
+101012,Adelaide Showground Railway Station,66
+6717,Mile End Railway Station,65
+6665,Adelaide Railway Station,99
+101493,Mile End Railway Station,65
+101494,Adelaide Showground Railway Station,66
+101491,Goodwood Railway Station,67
+6745,Woodlands Park Railway Station,71
+6686,Edwardstown Railway Station,70
+6689,Emerson Railway Station,69
+6677,Clarence Park Railway Station,68
+101842,Flinders Railway Station,64
+6678,Tonsley Railway Station,63
+6719,Mitchell Park Railway Station,62
+101495,Clarence Park Railway Station,68
+101496,Emerson Railway Station,69
+101497,Edwardstown Railway Station,70
+101498,Woodlands Park Railway Station,71
+101499,Mitchell Park Railway Station,62
+101500,Tonsley Railway Station,63
+101843,Flinders Railway Station,64
+6665,Adelaide Railway Station,99
+6692,Gawler Railway Station,23
+6691,Evanston Railway Station,21
+6737,Tambelin Railway Station,20
+6707,Kudla Railway Station,19
+6720,Munno Para Railway Station,18
+6736,Smithfield Railway Station,17
+6673,Broadmeadows Railway Station,16
+6744,Womma Railway Station,15
+6687,Elizabeth Railway Station,14
+6688,Elizabeth South Railway Station,13
+6724,Nurlutta Railway Station,12
+6733,Salisbury Railway Station,11
+6675,Chidda Railway Station,10
+6729,Parafield Railway Station,9
+6730,Parafield Gardens Railway Station,8
+6699,Greenfields Railway Station,7
+100435,Mawson Lakes Railway Station,6
+6682,Dry Creek Railway Station,5
+6705,Kilburn Railway Station,4
+6702,Islington Railway Station,3
+6683,Dudley Park Railway Station,2
+6728,Ovingham Railway Station,1
+6722,North Adelaide Railway Station,0
+101449,North Adelaide Railway Station,0
+101411,Ovingham Railway Station,1
+101450,Dudley Park Railway Station,2
+101451,Islington Railway Station,3
+101452,Kilburn Railway Station,4
+101453,Dry Creek Railway Station,5
+101454,Mawson Lakes Railway Station,6
+101455,Greenfields Railway Station,7
+101456,Parafield Gardens Railway Station,8
+101457,Parafield Railway Station,9
+101458,Chidda Railway Station,10
+101459,Salisbury Railway Station,11
+101460,Nurlutta Railway Station,12
+101461,Elizabeth South Railway Station,13
+101462,Elizabeth Railway Station,14
+101463,Womma Railway Station,15
+101464,Broadmeadows Railway Station,16
+101465,Smithfield Railway Station,17
+101466,Munno Para Railway Station,18
+101467,Kudla Railway Station,19
+101468,Tambelin Railway Station,20
+101469,Evanston Railway Station,21
+101470,Gawler Railway Station,23
+6665,Adelaide Railway Station,99
+6693,Gawler Central Railway Station,25
+6694,Gawler Oval Railway Station,24
+6692,Gawler Railway Station,23
+6691,Evanston Railway Station,21
+6737,Tambelin Railway Station,20
+6707,Kudla Railway Station,19
+6720,Munno Para Railway Station,18
+6736,Smithfield Railway Station,17
+6673,Broadmeadows Railway Station,16
+6744,Womma Railway Station,15
+6687,Elizabeth Railway Station,14
+6688,Elizabeth South Railway Station,13
+6724,Nurlutta Railway Station,12
+6733,Salisbury Railway Station,11
+6675,Chidda Railway Station,10
+6729,Parafield Railway Station,9
+6730,Parafield Gardens Railway Station,8
+6699,Greenfields Railway Station,7
+100435,Mawson Lakes Railway Station,6
+6682,Dry Creek Railway Station,5
+6705,Kilburn Railway Station,4
+6702,Islington Railway Station,3
+6683,Dudley Park Railway Station,2
+6728,Ovingham Railway Station,1
+6722,North Adelaide Railway Station,0
+101449,North Adelaide Railway Station,0
+101411,Ovingham Railway Station,1
+101450,Dudley Park Railway Station,2
+101451,Islington Railway Station,3
+101452,Kilburn Railway Station,4
+101453,Dry Creek Railway Station,5
+101454,Mawson Lakes Railway Station,6
+101455,Greenfields Railway Station,7
+101456,Parafield Gardens Railway Station,8
+101457,Parafield Railway Station,9
+101458,Chidda Railway Station,10
+101459,Salisbury Railway Station,11
+101460,Nurlutta Railway Station,12
+101461,Elizabeth South Railway Station,13
+101462,Elizabeth Railway Station,14
+101463,Womma Railway Station,15
+101464,Broadmeadows Railway Station,16
+101465,Smithfield Railway Station,17
+101466,Munno Para Railway Station,18
+101467,Kudla Railway Station,19
+101468,Tambelin Railway Station,20
+101469,Evanston Railway Station,21
+101470,Gawler Railway Station,23
+101471,Gawler Oval Railway Station,24
+101472,Gawler Central Railway Station,25
+6665,Adelaide Railway Station,99
+6746,Woodville Railway Station,35
+6747,Woodville Park Railway Station,34
+6706,Kilkenny Railway Station,33
+6743,West Croydon Railway Station,32
+6680,Croydon Railway Station,31
+6671,Bowden Railway Station,30
+6698,Grange Railway Station,29
+6684,East Grange Railway Station,28
+6735,Seaton Park Railway Station,27
+6666,Albert Park Railway Station,26
+101351,Bowden Railway Station,30
+101353,Croydon Railway Station,31
+101356,West Croydon Railway Station,32
+101357,Kilkenny Railway Station,33
+101359,Woodville Park Railway Station,34
+101361,Woodville Railway Station,35
+101363,Albert Park Railway Station,26
+101366,Seaton Park Railway Station,27
+101368,East Grange Railway Station,28
+101474,Grange Railway Station,29
+101012,Adelaide Showground Railway Station,66
+6717,Mile End Railway Station,65
+6665,Adelaide Railway Station,99
+6721,Noarlunga Railway Station,85
+6710,Lonsdale Railway Station,83
+6770,Hallett Cove Beach Railway Station,82
+6700,Hallett Cove Railway Station,81
+6672,Brighton Railway Station,77
+6701,Hove Railway Station,76
+6742,Warradale Railway Station,75
+6725,Oaklands Railway Station,74
+6745,Woodlands Park Railway Station,71
+6686,Edwardstown Railway Station,70
+6689,Emerson Railway Station,69
+6665,Adelaide Railway Station,99
+6726,Osborne Railway Station,48
+6715,Midlunga Railway Station,47
+6738,Taperoo Railway Station,46
+6681,Draper Railway Station,45
+6709,Largs North Railway Station,44
+6708,Largs Railway Station,43
+6731,Peterhead Railway Station,42
+6695,Glanville Railway Station,41
+6690,Ethelton Railway Station,40
+6760,Port Adelaide Railway Station,39
+6667,Alberton Railway Station,38
+6674,Cheltenham Railway Station,37
+101593,St Clair Railway Station,36
+6746,Woodville Railway Station,35
+6747,Woodville Park Railway Station,34
+6706,Kilkenny Railway Station,33
+6743,West Croydon Railway Station,32
+6680,Croydon Railway Station,31
+6671,Bowden Railway Station,30
+101351,Bowden Railway Station,30
+101353,Croydon Railway Station,31
+101356,West Croydon Railway Station,32
+101357,Kilkenny Railway Station,33
+101359,Woodville Park Railway Station,34
+101361,Woodville Railway Station,35
+101594,St Clair Railway Station,36
+101370,Cheltenham Railway Station,37
+101372,Alberton Railway Station,38
+101374,Port Adelaide Railway Station,39
+101376,Ethelton Railway Station,40
+101378,Glanville Railway Station,41
+101380,Peterhead Railway Station,42
+101382,Largs Railway Station,43
+101383,Largs North Railway Station,44
+101385,Draper Railway Station,45
+101388,Taperoo Railway Station,46
+101390,Midlunga Railway Station,47
+101392,Osborne Railway Station,48
+6665,Adelaide Railway Station,99
+6727,Outer Harbor Railway Station,50
+6723,North Haven Railway Station,49
+6726,Osborne Railway Station,48
+6715,Midlunga Railway Station,47
+6738,Taperoo Railway Station,46
+6681,Draper Railway Station,45
+6709,Largs North Railway Station,44
+6708,Largs Railway Station,43
+6731,Peterhead Railway Station,42
+6695,Glanville Railway Station,41
+6690,Ethelton Railway Station,40
+6760,Port Adelaide Railway Station,39
+6667,Alberton Railway Station,38
+6674,Cheltenham Railway Station,37
+101593,St Clair Railway Station,36
+6746,Woodville Railway Station,35
+6747,Woodville Park Railway Station,34
+6706,Kilkenny Railway Station,33
+6743,West Croydon Railway Station,32
+6680,Croydon Railway Station,31
+6671,Bowden Railway Station,30
+101351,Bowden Railway Station,30
+101353,Croydon Railway Station,31
+101356,West Croydon Railway Station,32
+101357,Kilkenny Railway Station,33
+101359,Woodville Park Railway Station,34
+101361,Woodville Railway Station,35
+101594,St Clair Railway Station,36
+101370,Cheltenham Railway Station,37
+101372,Alberton Railway Station,38
+101374,Port Adelaide Railway Station,39
+101376,Ethelton Railway Station,40
+101378,Glanville Railway Station,41
+101380,Peterhead Railway Station,42
+101382,Largs Railway Station,43
+101383,Largs North Railway Station,44
+101385,Draper Railway Station,45
+101388,Taperoo Railway Station,46
+101390,Midlunga Railway Station,47
+101392,Osborne Railway Station,48
+101394,North Haven Railway Station,49
+101475,Outer Harbor Railway Station,50
+6665,Adelaide Railway Station,99
+6733,Salisbury Railway Station,11
+100435,Mawson Lakes Railway Station,6
+101459,Salisbury Railway Station,11
+6697,Goodwood Railway Station,67
+101012,Adelaide Showground Railway Station,66
+6717,Mile End Railway Station,65
+6665,Adelaide Railway Station,99
+101493,Mile End Railway Station,65
+101494,Adelaide Showground Railway Station,66
+101491,Goodwood Railway Station,67
+101590,Seaford Railway Station,87
+101588,Seaford Meadows Railway Station,86
+6721,Noarlunga Railway Station,85
+6676,Christie Downs Railway Station,84
+6710,Lonsdale Railway Station,83
+6770,Hallett Cove Beach Railway Station,82
+6700,Hallett Cove Railway Station,81
+6713,Marino Rocks Railway Station,80
+6712,Marino Railway Station,79
+6734,Seacliff Railway Station,78
+6672,Brighton Railway Station,77
+6701,Hove Railway Station,76
+6742,Warradale Railway Station,75
+6725,Oaklands Railway Station,74
+6714,Marion Railway Station,73
+6668,Ascot Park Railway Station,72
+6745,Woodlands Park Railway Station,71
+6686,Edwardstown Railway Station,70
+6689,Emerson Railway Station,69
+6677,Clarence Park Railway Station,68
+101495,Clarence Park Railway Station,68
+101496,Emerson Railway Station,69
+101497,Edwardstown Railway Station,70
+101498,Woodlands Park Railway Station,71
+101502,Ascot Park Railway Station,72
+101503,Marion Railway Station,73
+101504,Oaklands Railway Station,74
+101505,Warradale Railway Station,75
+101506,Hove Railway Station,76
+101507,Brighton Railway Station,77
+101508,Seacliff Railway Station,78
+101509,Marino Railway Station,79
+101510,Marino Rocks Railway Station,80
+101511,Hallett Cove Railway Station,81
+101512,Hallett Cove Beach Railway Station,82
+101513,Lonsdale Railway Station,83
+101514,Christie Downs Railway Station,84
+101515,Noarlunga Railway Station,85
+101587,Seaford Meadows Railway Station,86
+101589,Seaford Railway Station,87

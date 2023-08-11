@@ -4,6 +4,7 @@ import math
 import realtime_gtfs_handler as rt
 import static_gtfs_handler as s
 import leds
+import csv
 
 TRAIN_ROUTES = ["BEL", "FLNDRS", "GAW", "GAWC", "GRNG", "NOAR", "OSBORN", "OUTHA", "SALIS", "SEAFRD"]
 FIRST_RUN = True
@@ -35,15 +36,10 @@ def get_closest_train_stop(train, train_routes):
 
     return closest_stop
 
-def setup_gtfs():
-    pass
-
-def setup_led_strip():
-    leds.setup_strip()
-
-def main():
+def setup_static_gtfs():
+    """Call first for setting up Static GTFS"""
+    
     gtfs_zip_url = "https://gtfs.adelaidemetro.com.au/v1/static/latest/google_transit.zip"
-
     #extract_gt_zip(download_gt_zip(gtfs_zip_url))
 
     #feedinfo = s.read_feed_info_csv()
@@ -58,7 +54,10 @@ def main():
     print("Read Trips CSV")
     trips = s.read_trips_csv()
 
+    return (stops, stop_times, trips)
 
+def update_realtime_gtfs():
+    """Updates realtime GTFS data """
     feed_url = "https://gtfs.adelaidemetro.com.au/v1/realtime/vehicle_positions"
 
     print("Get GTFS Feed")
@@ -66,8 +65,41 @@ def main():
     print("Get Entities")
     gtfs_entities = rt.get_entities(gtfs_feed)
 
+    return gtfs_entities
+
+def setup_led_strip():
+    """Sets up LED stop for Use - runs small test"""
+    print("Setting up LED Strip")
+    leds.setup_strip()
+
+    for i in range(176):
+        j = i % 88
+        leds.light(j,255,0,0)
+        leds.clear(j-5 if j-5 >=0 else 0)
+        leds.show()
+        leds.sleep(0.2)
+
+    leds.clear_all()
+
+
+def main():
+    """Called when running stand-alone"""
+
+    setup_led_strip()
+    
+    (stops, stop_times, trips) = setup_static_gtfs()
+
+    gtfs_entities = update_realtime_gtfs()
+
     print("Get Train Routes")
-    train_routes = s.get_stops_by_route(TRAIN_ROUTES, trips, stop_times, stops)
+    train_stops = s.get_stops_from_route_list(TRAIN_ROUTES, trips, stop_times, stops)
+
+    stop_led_map = {}
+
+    with open("led_map") as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            stop_led_map[row["stop_id"]] = int(row["led_num"])
 
     print("Get List of Trains")
     trains = []
@@ -81,7 +113,10 @@ def main():
         stops_with_trains.append(get_closest_train_stop(train,train_routes))
 
     for stop in stops_with_trains:
+        leds.light(stop_led_map[stop.get_stop_id()],255,0,0)
         print(stop.get_stop_name())
+
+    leds.show()
 
 if __name__ == "__main__":
     main()

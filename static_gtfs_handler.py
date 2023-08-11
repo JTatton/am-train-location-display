@@ -266,7 +266,7 @@ def get_stops_on_route(route_id, trips, stop_times, stops):
         if stops_stop_id in valid_stop_ids:
             if stops_stop_id not in valid_stops:
                 valid_stops.append(stop)
-
+                
     return valid_stops
 
 def get_stop_position_from_id(stop_id, stops):
@@ -275,7 +275,7 @@ def get_stop_position_from_id(stop_id, stops):
         if stop.get_stop_id() == stop_id:
             return stop.get_stop_position()
         
-def get_stops_by_route(routes, trips, stop_times, stops):
+def get_stops_from_route_list(routes, trips, stop_times, stops):
 
     valid_stops = {}
     valid_stop = {}

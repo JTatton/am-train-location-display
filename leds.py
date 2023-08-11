@@ -12,6 +12,7 @@ from rpi_ws281x import *
 
 LED_COUNT = 88
 LED_PIN = 18
+led_strip = PixelStrip(LED_COUNT, LED_PIN, brightness=64)
 
 """
 Using the default values for the PixelStrip class.
@@ -21,7 +22,6 @@ Using the default values for the PixelStrip class.
                 brightness=255, channel=0, strip_type=None, gamma=None):
             '''Class to represent a SK6812/WS281x LED display.  Num should be the number of pixels in the display, and pin should be the GPIO pin connected to the display signal line (must be a PWM pin like 18!).  Optional parameters are freq, the frequency of the display signal in hertz (default 800khz), dma, the DMA channel to use (default 10), invert, a boolean specifying if the signal line should be inverted (default False), and channel, the PWM channel to use (defaults to 0).'''
 """
-led_strip = PixelStrip(LED_COUNT, LED_PIN)
 
 gamma8 = [
     0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,\
@@ -65,27 +65,27 @@ def show():
 def clear_all():
     """Clears all LEDs and turns off"""
     for i in range(LED_COUNT):
-        led_strip.setPixelColor(i, Color(0,0,0))
-        sleep(50/1000.0)
-    led_strip.show()
+        clear(i)
+    show()
 
-def clear(ledNum):
+def clear(led_num):
     """Turns off specified LED"""
-    led_strip.setPixelColor(ledNum, Color(0,0,0))
+    light(led_num,0,0,0)
 
 def test_leds():
     """Test function for testing all LEDs and cycles colours"""
-    light_all(255,0,0,2)
-    light_all(0,255,0,2)
-    light_all(0,0,255,2)
-    light_all(255,255,255,2)
-    light_all(randint(0,255), randint(0,255), randint(0,255),2)
-    light_all(randint(0,255), randint(0,255), randint(0,255),2)
-    light_all(randint(0,255), randint(0,255), randint(0,255),2)
-    light_all(randint(0,255), randint(0,255), randint(0,255),2)
-    light_all(randint(0,255), randint(0,255), randint(0,255),2)
-    light_all(randint(0,255), randint(0,255), randint(0,255),2)
-    light_all(randint(0,255), randint(0,255), randint(0,255),2)
+    light_all(255,0,0,0.5)
+    light_all(0,255,0,0.5)
+    light_all(0,0,255,0.5)
+    light_all(255,255,255,0.5)
+    light_all(randint(0,255), randint(0,255), randint(0,255),0.5)
+    light_all(randint(0,255), randint(0,255), randint(0,255),0.5)
+    light_all(randint(0,255), randint(0,255), randint(0,255),0.5)
+    light_all(randint(0,255), randint(0,255), randint(0,255),0.5)
+    light_all(randint(0,255), randint(0,255), randint(0,255),0.5)
+    light_all(randint(0,255), randint(0,255), randint(0,255),0.5)
+    light_all(randint(0,255), randint(0,255), randint(0,255),0.5)
+    clear_all()
 
 if __name__ == "__main__":
     print("LEDs Module\n")
