@@ -7,10 +7,10 @@ import leds
 import csv
 from datetime import datetime
 
-#TRAIN_ROUTES = ["BEL", "FLNDRS", "GAW", "GAWC", "GRNG", "NOAR", "OSBORN", "OUTHA", "SALIS", "SEAFRD"]
-TRAIN_ROUTES = ["GAW","OUTHA","BEL","SEAFRD"]
+TRAIN_ROUTES = ["BEL", "FLNDRS", "GAW", "GAWC", "GRNG", "NOAR", "OSBORN", "OUTHA", "SALIS", "SEAFRD"]
+#TRAIN_ROUTES = ["GAW","OUTHA","BEL","SEAFRD"]
 UPDATE_DELAY = 25
-STOP_THRESHOLD = 2.55e-6
+STOP_THRESHOLD = 5e-6
 
 def get_distance(lat_1,long_1,lat_2,long_2):
     """Gets distance between point 1 and point 2"""
