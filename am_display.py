@@ -9,7 +9,7 @@ from datetime import datetime
 
 #TRAIN_ROUTES = ["BEL", "FLNDRS", "GAW", "GAWC", "GRNG", "NOAR", "OSBORN", "OUTHA", "SALIS", "SEAFRD"]
 TRAIN_ROUTES = ["GAW","OUTHA","BEL","SEAFRD"]
-FIRST_RUN = True
+UPDATE_DELAY = 15
 
 def get_distance(lat_1,long_1,lat_2,long_2):
     """Gets distance between point 1 and point 2"""
@@ -32,6 +32,8 @@ def get_closest_train_stop(train, train_routes):
         
         dist = get_distance(train_lat, train_long, stop_lat, stop_long)
 
+        # Smallest distance between any 2 stops is 5.1e-6
+        # We can assume that any train distance <5e-6 is at that stop
         if dist <= 5e-6:
             closest_stop = stop
             return closest_stop
@@ -124,8 +126,9 @@ def main():
     
     while True:
         try:
-            if (datetime.now() - last_update).seconds > 30:
-                print("updating")
+            if (datetime.now() - last_update).seconds > UPDATE_DELAY:
+                print("\nUpdating")
+                print(datetime.now())
                 last_update = update(train_stops,stop_led_map)
         except KeyboardInterrupt:
             print("Keyboard Interrupt")
