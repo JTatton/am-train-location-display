@@ -9,7 +9,7 @@ from datetime import datetime
 
 #TRAIN_ROUTES = ["BEL", "FLNDRS", "GAW", "GAWC", "GRNG", "NOAR", "OSBORN", "OUTHA", "SALIS", "SEAFRD"]
 TRAIN_ROUTES = ["GAW","OUTHA","BEL","SEAFRD"]
-UPDATE_DELAY = 15
+UPDATE_DELAY = 25
 
 def get_distance(lat_1,long_1,lat_2,long_2):
     """Gets distance between point 1 and point 2"""
@@ -33,12 +33,11 @@ def get_closest_train_stop(train, train_routes):
         dist = get_distance(train_lat, train_long, stop_lat, stop_long)
 
         # Smallest distance between any 2 stops is 5.1e-6
-        # We can assume that any train distance <5e-6 is at that stop
-        if dist <= 5e-6:
+        # We can adjust this threshold
+        if dist <= 4.5e-6:
             closest_stop = stop
             return closest_stop
-
-        if dist < closest_distance:
+        elif dist < closest_distance:
             closest_stop = stop
             closest_distance = dist
 
