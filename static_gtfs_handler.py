@@ -19,6 +19,7 @@ from io import BytesIO
 import zipfile
 import csv
 import requests
+import timeit
 
 class FeedInfo:
     """FeedInfo Class
@@ -33,6 +34,7 @@ class FeedInfo:
 
     def get_feed_end_date(self):
         return self.feed_end_date
+
 
 class Stop:
     """Stop class"""
@@ -65,6 +67,7 @@ class Stop:
     def get_stop(self):
         return (self.stop_id, self.stop_code, self.stop_name, self.stop_desc, self.stop_lat, self.stop_lon, self.zone_id, self.stop_url, self.location_type, self.parent_station, self.stop_timezone, self.wheelchair_boarding)
 
+
 class StopTime():
     """Stop Time Class"""
     def __init__(self,stop_time):
@@ -85,6 +88,7 @@ class StopTime():
     def get_trip_id(self):
         return self.trip_id
 
+
 class Trip():
     def __init__(self, trip):
         self.route_id = trip["route_id"]
@@ -102,6 +106,7 @@ class Trip():
     
     def get_trip_id(self):
         return self.trip_id
+
 
 class Route():
     def __init__(self, route):
@@ -140,15 +145,18 @@ class Agency():
         self.agency_phone = agency["agency_phone"]
         self.agency_fare_url = agency["agency_fare_url"]
 
-def read_feed_info_csv():
-        with open("google-transit/feed_info.txt") as file:
-            reader = csv.DictReader(file)
 
-            for row in reader:
-                return FeedInfo(row)
+def read_feed_info_csv():
+    """Reads feed_info.txt as CSV into FeedInfo Object"""
+    with open("google-transit/feed_info.txt") as file:
+        reader = csv.DictReader(file)
+
+        for row in reader:
+            return FeedInfo(row)
+
 
 def read_stop_csv():
-    """Reads Stops to List of Stop Class"""
+    """Reads Stops as CSV to List of Stop Class"""
     stops = []
 
     with open("google-transit/stops.txt") as file:
@@ -160,6 +168,7 @@ def read_stop_csv():
 
 
 def read_stop_times_csv():
+    """Reads stop_times.txt as CSV and return list of StopTime"""
     stop_times = []
 
     with open("google-transit/stop_times.txt") as file:
@@ -169,7 +178,9 @@ def read_stop_times_csv():
 
     return stop_times
 
+
 def read_trips_csv():
+    """Reads trips.txt as CSV into list of Trip"""
     trips = []
 
     with open("google-transit/trips.txt") as file:
@@ -179,7 +190,9 @@ def read_trips_csv():
 
     return trips
 
+
 def read_routes_csv():
+    """Reads routes.txt and returns list of Route"""
     routes = []
 
     with open("google-transit/routes.txt") as file:
@@ -189,15 +202,17 @@ def read_routes_csv():
 
     return routes
 
+
 def read_agency_csv():
-    agency = []
+    """Reads agency.txt and returns list of Agency"""
+    agencies = []
 
     with open("google-transit/agency.txt") as file:
         reader = csv.DictReader(file)
         for row in reader:
-            agency.append(Agency(row))
+            agencies.append(Agency(row))
 
-    return agency
+    return agencies
 
 def download_gt_zip(url):
     """Downloads google-transit zip and returns request object"""
@@ -226,7 +241,8 @@ def check_gt_url(url):
     """Primitively checks that the url is a google_transit zip"""
     return url.split("/")[-1] == "google_transit.zip"
 
-def get_stop_id_on_route(route_id, trips, stop_times):
+
+def get_stop_id_on_route(route_id: str, trips: list, stop_times: list) -> list:
     """Returns List of Stop IDs on Route"""
     valid_trip_ids = []
     valid_stop_ids = []
@@ -243,7 +259,8 @@ def get_stop_id_on_route(route_id, trips, stop_times):
     
     return valid_stop_ids
 
-def get_stops_on_route(route_id, trips, stop_times, stops):
+
+def get_stops_on_route(route_id: str, trips: list, stop_times: list, stops: list) -> list:
     """Returns List of Stops on Route"""
     valid_trip_ids = []
     valid_stop_ids = []
@@ -269,16 +286,20 @@ def get_stops_on_route(route_id, trips, stop_times, stops):
                 
     return valid_stops
 
-def get_stop_position_from_id(stop_id, stops):
+
+def get_stop_position_from_id(stop_id: str, stops: list) -> tuple:
+    """Search for stop_id (str) in stops (list of Stop) and return stop_position (lat, long)"""
 
     for stop in stops:
         if stop.get_stop_id() == stop_id:
             return stop.get_stop_position()
-        
-def get_stops_from_route_list(routes, trips, stop_times, stops):
+  
+
+def get_stops_from_route_list(routes: list, trips: list, stop_times: list, stops: list) -> dict:
+    """Takes list of Routes as strs and returns dict 
+    key: route, value: list of Stop"""
 
     valid_stops = {}
-    valid_stop = {}
 
     for route in routes:
         valid_stops[route] = get_stops_on_route(route, trips, stop_times, stops)
@@ -293,14 +314,50 @@ def main():
 
     #extract_gt_zip(download_gt_zip(gtfs_zip_url))
 
-    feedinfo = read_feed_info_csv()
+    #feedinfo = read_feed_info_csv()
+    print("Read Stops")
     stops = read_stop_csv()
+    print("Read Stop Times")
     stop_times = read_stop_times_csv()
+    print("Trips")
     trips = read_trips_csv()
-    routes = read_routes_csv()
-    agency = read_agency_csv()
+    #routes = read_routes_csv()
+    #agency = read_agency_csv()
 
-    get_stop_id_on_route("SEAFRD",trips,stop_times)
+    route_list = ["BEL", "FLNDRS", "GAW", "GAWC", "GRNG", "NOAR", "OSBORN", "OUTHA", "SALIS", "SEAFRD"]
+
+    stops = get_stops_from_route_list(route_list, trips, stop_times, stops)
+
+    #stops = get_stops_on_route("BEL",trips,stop_times,stops)
+
+    positions = []
+    for stop in stops:
+        for astop in stops[stop]:
+            positions.append(astop.get_stop_position())
+
+    lats = []
+    longs = []
+
+    for pos in positions:
+        lat = float(pos[0])
+        long = float(pos[1])
+
+        if lat not in lats:
+            lats.append(lat)
+        
+        if long not in longs:
+            longs.append(long)
+
+    lats.sort()
+    longs.sort()
+
+    diff = 9999
+
+    for i in range(len(lats)-1):
+        if lats[i+1] - lats[i] < diff:
+            diff = lats[i+1] - lats[i]
+
+    print(f"diff: {diff}")
 
 if __name__ == "__main__":
     main()

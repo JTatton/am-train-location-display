@@ -5,8 +5,10 @@ import realtime_gtfs_handler as rt
 import static_gtfs_handler as s
 import leds
 import csv
+from datetime import datetime
 
-TRAIN_ROUTES = ["BEL", "FLNDRS", "GAW", "GAWC", "GRNG", "NOAR", "OSBORN", "OUTHA", "SALIS", "SEAFRD"]
+#TRAIN_ROUTES = ["BEL", "FLNDRS", "GAW", "GAWC", "GRNG", "NOAR", "OSBORN", "OUTHA", "SALIS", "SEAFRD"]
+TRAIN_ROUTES = ["GAW","OUTHA","BEL","SEAFRD"]
 FIRST_RUN = True
 
 def get_distance(lat_1,long_1,lat_2,long_2):
@@ -29,6 +31,10 @@ def get_closest_train_stop(train, train_routes):
         stop_lat, stop_long = stop.get_stop_position()
         
         dist = get_distance(train_lat, train_long, stop_lat, stop_long)
+
+        if dist <= 5e-6:
+            closest_stop = stop
+            return closest_stop
 
         if dist < closest_distance:
             closest_stop = stop
@@ -67,39 +73,9 @@ def update_realtime_gtfs():
 
     return gtfs_entities
 
-def setup_led_strip():
-    """Sets up LED stop for Use - runs small test"""
-    print("Setting up LED Strip")
-    leds.setup_strip()
-
-    for i in range(176):
-        j = i % 88
-        leds.light(j,255,0,0)
-        leds.clear(j-5 if j-5 >=0 else 0)
-        leds.show()
-        leds.sleep(0.2)
-
-    leds.clear_all()
-
-
-def main():
-    """Called when running stand-alone"""
-
-    setup_led_strip()
-    
-    (stops, stop_times, trips) = setup_static_gtfs()
-
+def update(train_stops,stop_led_map):
+    print("Update RT GTFS Feed")
     gtfs_entities = update_realtime_gtfs()
-
-    print("Get Train Routes")
-    train_stops = s.get_stops_from_route_list(TRAIN_ROUTES, trips, stop_times, stops)
-
-    stop_led_map = {}
-
-    with open("led_map") as file:
-        reader = csv.DictReader(file)
-        for row in reader:
-            stop_led_map[row["stop_id"]] = int(row["led_num"])
 
     print("Get List of Trains")
     trains = []
@@ -108,15 +84,53 @@ def main():
         if route_id in TRAIN_ROUTES:
             trains.append(entity)
 
+    print("Get Stops with Trains")
     stops_with_trains = []
     for train in trains:
-        stops_with_trains.append(get_closest_train_stop(train,train_routes))
+        stops_with_trains.append(get_closest_train_stop(train,train_stops))
 
+    print("Light LEDs")
+    leds.clear_all()
     for stop in stops_with_trains:
         leds.light(stop_led_map[stop.get_stop_id()],255,0,0)
         print(stop.get_stop_name())
 
     leds.show()
+    return datetime.now()
+
+def setup_led_strip():
+    """Sets up LED stop for Use - runs small test"""
+    print("Setting up LED Strip")
+    leds.setup_strip()
+    leds.clear_all()
+
+
+def main():
+    """Called when running stand-alone"""
+    last_update = datetime.now()
+
+    setup_led_strip()
+    
+    (stops, stop_times, trips) = setup_static_gtfs()
+
+    print("Get Train Routes")
+    train_stops = s.get_stops_from_route_list(TRAIN_ROUTES, trips, stop_times, stops)
+
+    stop_led_map = {}
+    with open("led_map") as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            stop_led_map[row["stop_id"]] = int(row["led_num"])
+    
+    while True:
+        try:
+            if (datetime.now() - last_update).seconds > 30:
+                print("updating")
+                last_update = update(train_stops,stop_led_map)
+        except KeyboardInterrupt:
+            print("Keyboard Interrupt")
+            leds.clear_all()
+            break
 
 if __name__ == "__main__":
     main()
