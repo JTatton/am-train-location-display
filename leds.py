@@ -8,11 +8,17 @@ This is specifically used for the realtime train display project, but could be e
 
 from time import sleep
 from random import randint
-from rpi_ws281x import *
+import rpi_ws281x
 
+
+# 
 LED_COUNT = 88
 LED_PIN = 18
-led_strip = PixelStrip(LED_COUNT, LED_PIN, brightness=64)
+
+
+led_strip = rpi_ws281x.PixelStrip(LED_COUNT, LED_PIN, brightness=64)
+
+# Optional parameters
 
 """
 Using the default values for the PixelStrip class.
@@ -48,7 +54,7 @@ def setup_strip():
 def light(ledNum, red=255, green=255, blue=255):
     """Basic call to light ledNum a specific colour. 
     Must call show() afterwards."""
-    led_strip.setPixelColor(ledNum, Color(gamma8[red],gamma8[green],gamma8[blue]))
+    led_strip.setPixelColor(ledNum, rpi_ws281x.Color(gamma8[red],gamma8[green],gamma8[blue]))
 
 def light_all(r,g,b,t):
     """Light all leds the same colour for t amount of time.
