@@ -50,13 +50,27 @@ class EntityVehicle:
         """Getter Function returns Tuple (latitude, longitude)"""
         return (self.vehicle_position["latitude"], self.vehicle_position["longitude"])
 
+
 def get_entities(feed):
+    """Gets entities from feed and returns list of EntityVehicle"""
     entities = []
 
     for entity in feed.entity:
         entities.append(EntityVehicle(entity))
 
     return entities
+
+def get_feed_timestamp(feed):
+    """Returns timestamps from th GTFS Realtime Feed Header as int"""
+    return int(feed.header.timestamp)
+
+def get_feed(feed_url):
+    """Function to get GTFS Feed and Parse to List"""
+    request_response = requests.get(feed_url)
+    gtfs_feed = gtfs_realtime_pb2.FeedMessage()
+    gtfs_feed.ParseFromString(request_response.content)
+    return gtfs_feed
+
 
 def main():
     """Main should only be called during testing"""
@@ -70,15 +84,12 @@ def main():
 
     entities = get_entities(gtfs_feed)
 
-    for i in entities:
-        print(f"Route ID: {i.get_route_id()}, Vehicle ID: {i.get_vehicle_id()}, Lat: {i.get_position()[0]}, Long: {i.get_position()[1]}")
+    timestamp = get_feed_timestamp(gtfs_feed)
 
-def get_feed(feed_url):
-    """Function to get GTFS Feed and Parse to List"""
-    request_response = requests.get(feed_url)
-    gtfs_feed = gtfs_realtime_pb2.FeedMessage()
-    gtfs_feed.ParseFromString(request_response.content)
-    return gtfs_feed
+    for i in entities:
+        print(f"Route ID: {i.get_route_id()}, Vehicle ID: {i.get_vehicle_id()}, Lat: {i.get_vehicle_position()[0]}, Long: {i.get_vehicle_position()[1]}")
+
+    print(f"Timestamp: {timestamp}")
 
 if __name__ == "__main__":
     main()
